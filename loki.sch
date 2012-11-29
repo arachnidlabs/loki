@@ -11291,7 +11291,7 @@ A3 Larger Frame</description>
 <part name="VCC6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805"/>
-<part name="R3" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
+<part name="R3" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="SV1" library="con-lsta" deviceset="FE10-1" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>

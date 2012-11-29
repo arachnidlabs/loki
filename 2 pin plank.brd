@@ -1313,10 +1313,12 @@ design rules under a new name.</description>
 <wire x1="78.135" y1="11.115" x2="78.135" y2="10.19" width="0.3048" layer="1"/>
 <wire x1="78.135" y1="10.19" x2="74.93" y2="6.985" width="0.3048" layer="1"/>
 <via x="74.93" y="6.985" extent="1-16" drill="0.3"/>
-<wire x1="74.93" y1="6.985" x2="72.39" y2="4.445" width="0.3048" layer="16"/>
 <wire x1="72.39" y1="4.445" x2="67.31" y2="4.445" width="0.3048" layer="16"/>
 <via x="67.31" y="4.445" extent="1-16" drill="0.3"/>
 <wire x1="67.31" y1="4.445" x2="67.31" y2="2.795" width="0.3048" layer="1"/>
+<wire x1="72.39" y1="4.445" x2="73.025" y2="4.445" width="0.3048" layer="16"/>
+<wire x1="73.025" y1="4.445" x2="74.93" y2="6.35" width="0.3048" layer="16"/>
+<wire x1="74.93" y1="6.35" x2="74.93" y2="6.985" width="0.3048" layer="16"/>
 </signal>
 <signal name="SCL">
 <contactref element="U$1" pad="OSCL"/>
