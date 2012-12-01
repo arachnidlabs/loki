@@ -118,7 +118,7 @@
 </layers>
 <board>
 <plain>
-<text x="41.275" y="34.29" size="1.778" layer="1" align="bottom-center">Loki DC Motor Plank v0.1</text>
+<text x="41.275" y="34.29" size="1.778" layer="21" align="bottom-center">Loki DC Motor Plank v0.1</text>
 <text x="75.8825" y="27.94" size="2.54" layer="21" align="bottom-center">+</text>
 <text x="75.8825" y="18.7325" size="2.54" layer="21" align="bottom-center">-</text>
 <text x="71.755" y="24.13" size="1.27" layer="21" rot="R90" align="bottom-center">DC in 6-20V</text>
