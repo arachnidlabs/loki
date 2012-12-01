@@ -915,19 +915,29 @@ We've spent an enormous amount of time creating and checking these footprints an
 <library name="nickparts">
 <packages>
 <package name="PROTOPAD-3">
-<pad name="P$1" x="0" y="2.54" drill="0.9" diameter="1.6764"/>
-<pad name="P$2" x="0" y="0" drill="0.9" diameter="1.6764"/>
-<pad name="P$3" x="0" y="-2.54" drill="0.9" diameter="1.6764"/>
+<pad name="P$1" x="0" y="2.54" drill="0.9" diameter="1.6764" shape="square"/>
+<pad name="P$2" x="0" y="0" drill="0.9" diameter="1.6764" shape="square"/>
+<pad name="P$3" x="0" y="-2.54" drill="0.9" diameter="1.6764" shape="square"/>
 </package>
-<package name="PROTOPAD-4">
+<package name="PROTOPAD-4-ROUND">
 <pad name="P$1" x="0" y="3.81" drill="0.9" diameter="1.6764"/>
 <pad name="P$2" x="0" y="1.27" drill="0.9" diameter="1.6764"/>
 <pad name="P$3" x="0" y="-1.27" drill="0.9" diameter="1.6764"/>
 <pad name="P$4" x="0" y="-3.81" drill="0.9" diameter="1.6764"/>
 </package>
-<package name="PROTOPAD-2">
+<package name="PROTOPAD-4">
+<pad name="P$1" x="0" y="3.81" drill="0.9" diameter="1.6764" shape="square"/>
+<pad name="P$2" x="0" y="1.27" drill="0.9" diameter="1.6764" shape="square"/>
+<pad name="P$3" x="0" y="-1.27" drill="0.9" diameter="1.6764" shape="square"/>
+<pad name="P$4" x="0" y="-3.81" drill="0.9" diameter="1.6764" shape="square"/>
+</package>
+<package name="PROTOPAD-2-ROUND">
 <pad name="P$1" x="0" y="1.27" drill="0.9" diameter="1.6764"/>
 <pad name="P$2" x="0" y="-1.27" drill="0.9" diameter="1.6764"/>
+</package>
+<package name="PROTOPAD-2">
+<pad name="P$1" x="0" y="1.27" drill="0.9" diameter="1.6764" shape="square"/>
+<pad name="P$2" x="0" y="-1.27" drill="0.9" diameter="1.6764" shape="square"/>
 </package>
 </packages>
 </library>
@@ -1196,91 +1206,91 @@ design rules under a new name.</description>
 <element name="U$20" library="nickparts" package="PROTOPAD-3" value="PROTOPAD-3" x="67.31" y="15.875"/>
 <element name="U$21" library="nickparts" package="PROTOPAD-3" value="PROTOPAD-3" x="69.85" y="15.875"/>
 <element name="U$22" library="nickparts" package="PROTOPAD-3" value="PROTOPAD-3" x="72.39" y="15.875"/>
-<element name="U$23" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="53.34" y="23.495" rot="R90"/>
-<element name="U$24" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="63.5" y="23.495" rot="R90"/>
-<element name="U$25" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="53.34" y="20.955" rot="R90"/>
-<element name="U$26" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="63.5" y="20.955" rot="R90"/>
-<element name="U$27" library="nickparts" package="PROTOPAD-2" value="PROTOPAD-2" x="71.12" y="23.495" rot="R90"/>
-<element name="U$28" library="nickparts" package="PROTOPAD-2" value="PROTOPAD-2" x="71.12" y="20.955" rot="R90"/>
-<element name="U$29" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="68.58" y="36.195" rot="R270"/>
-<element name="U$30" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="48.26" y="36.195" rot="R270"/>
-<element name="U$31" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="68.58" y="10.795" rot="R90"/>
-<element name="U$32" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="58.42" y="10.795" rot="R90"/>
-<element name="U$33" library="nickparts" package="PROTOPAD-2" value="PROTOPAD-2" x="50.8" y="10.795" rot="R90"/>
-<element name="U$34" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="46.99" y="27.305"/>
-<element name="U$35" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="46.99" y="17.145"/>
-<element name="U$36" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="44.45" y="17.145"/>
-<element name="U$37" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="44.45" y="27.305"/>
-<element name="U$38" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="41.91" y="27.305"/>
-<element name="U$39" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="41.91" y="17.145"/>
-<element name="U$40" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="39.37" y="27.305"/>
-<element name="U$41" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="39.37" y="17.145"/>
-<element name="U$42" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="36.83" y="27.305"/>
-<element name="U$43" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="36.83" y="17.145"/>
-<element name="U$44" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="34.29" y="27.305"/>
-<element name="U$45" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="34.29" y="17.145"/>
-<element name="U$46" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="31.75" y="27.305"/>
-<element name="U$47" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="31.75" y="17.145"/>
-<element name="U$48" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="29.21" y="27.305"/>
-<element name="U$49" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="29.21" y="17.145"/>
-<element name="U$50" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="26.67" y="27.305"/>
-<element name="U$51" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="26.67" y="17.145"/>
-<element name="U$52" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="24.13" y="27.305"/>
-<element name="U$53" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="24.13" y="17.145"/>
-<element name="U$54" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="21.59" y="27.305"/>
-<element name="U$55" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="21.59" y="17.145"/>
-<element name="U$56" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="19.05" y="27.305"/>
-<element name="U$57" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="19.05" y="17.145"/>
-<element name="U$58" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="6.35" y="27.305"/>
-<element name="U$59" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="8.89" y="27.305"/>
-<element name="U$60" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="11.43" y="27.305"/>
-<element name="U$61" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="13.97" y="27.305"/>
-<element name="U$62" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="16.51" y="27.305"/>
-<element name="U$63" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="3.81" y="27.305"/>
-<element name="U$64" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="3.81" y="17.145"/>
-<element name="U$65" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="6.35" y="17.145"/>
-<element name="U$66" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="8.89" y="17.145"/>
-<element name="U$67" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="11.43" y="17.145"/>
-<element name="U$68" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="13.97" y="17.145"/>
-<element name="U$69" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="16.51" y="17.145"/>
-<element name="U$70" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="68.58" y="33.655" rot="R90"/>
-<element name="U$71" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="58.42" y="33.655" rot="R90"/>
-<element name="U$72" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="48.26" y="33.655" rot="R90"/>
-<element name="U$73" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="38.1" y="33.655" rot="R90"/>
-<element name="U$74" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="27.94" y="33.655" rot="R90"/>
-<element name="U$75" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="17.78" y="33.655" rot="R90"/>
-<element name="U$76" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="7.62" y="33.655" rot="R90"/>
-<element name="U$77" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="74.93" y="29.845"/>
+<element name="U$23" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="53.34" y="23.495" rot="R90"/>
+<element name="U$24" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="63.5" y="23.495" rot="R90"/>
+<element name="U$25" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="53.34" y="20.955" rot="R90"/>
+<element name="U$26" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="63.5" y="20.955" rot="R90"/>
+<element name="U$27" library="nickparts" package="PROTOPAD-2" value="PROTOPAD-2SQUARE" x="71.12" y="23.495" rot="R90"/>
+<element name="U$28" library="nickparts" package="PROTOPAD-2" value="PROTOPAD-2SQUARE" x="71.12" y="20.955" rot="R90"/>
+<element name="U$29" library="nickparts" package="PROTOPAD-4-ROUND" value="PROTOPAD-4ROUND" x="68.58" y="36.195" rot="R270"/>
+<element name="U$30" library="nickparts" package="PROTOPAD-4-ROUND" value="PROTOPAD-4ROUND" x="48.26" y="36.195" rot="R270"/>
+<element name="U$31" library="nickparts" package="PROTOPAD-4-ROUND" value="PROTOPAD-4ROUND" x="68.58" y="10.795" rot="R90"/>
+<element name="U$32" library="nickparts" package="PROTOPAD-4-ROUND" value="PROTOPAD-4ROUND" x="58.42" y="10.795" rot="R90"/>
+<element name="U$33" library="nickparts" package="PROTOPAD-2-ROUND" value="PROTOPAD-2ROUND" x="50.8" y="10.795" rot="R90"/>
+<element name="U$34" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="46.99" y="27.305"/>
+<element name="U$35" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="46.99" y="17.145"/>
+<element name="U$36" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="44.45" y="17.145"/>
+<element name="U$37" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="44.45" y="27.305"/>
+<element name="U$38" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="41.91" y="27.305"/>
+<element name="U$39" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="41.91" y="17.145"/>
+<element name="U$40" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="39.37" y="27.305"/>
+<element name="U$41" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="39.37" y="17.145"/>
+<element name="U$42" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="36.83" y="27.305"/>
+<element name="U$43" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="36.83" y="17.145"/>
+<element name="U$44" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="34.29" y="27.305"/>
+<element name="U$45" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="34.29" y="17.145"/>
+<element name="U$46" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="31.75" y="27.305"/>
+<element name="U$47" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="31.75" y="17.145"/>
+<element name="U$48" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="29.21" y="27.305"/>
+<element name="U$49" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="29.21" y="17.145"/>
+<element name="U$50" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="26.67" y="27.305"/>
+<element name="U$51" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="26.67" y="17.145"/>
+<element name="U$52" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="24.13" y="27.305"/>
+<element name="U$53" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="24.13" y="17.145"/>
+<element name="U$54" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="21.59" y="27.305"/>
+<element name="U$55" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="21.59" y="17.145"/>
+<element name="U$56" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="19.05" y="27.305"/>
+<element name="U$57" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="19.05" y="17.145"/>
+<element name="U$58" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="6.35" y="27.305"/>
+<element name="U$59" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="8.89" y="27.305"/>
+<element name="U$60" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="11.43" y="27.305"/>
+<element name="U$61" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="13.97" y="27.305"/>
+<element name="U$62" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="16.51" y="27.305"/>
+<element name="U$63" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="3.81" y="27.305"/>
+<element name="U$64" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="3.81" y="17.145"/>
+<element name="U$65" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="6.35" y="17.145"/>
+<element name="U$66" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="8.89" y="17.145"/>
+<element name="U$67" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="11.43" y="17.145"/>
+<element name="U$68" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="13.97" y="17.145"/>
+<element name="U$69" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="16.51" y="17.145"/>
+<element name="U$70" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="68.58" y="33.655" rot="R90"/>
+<element name="U$71" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="58.42" y="33.655" rot="R90"/>
+<element name="U$72" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="48.26" y="33.655" rot="R90"/>
+<element name="U$73" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="38.1" y="33.655" rot="R90"/>
+<element name="U$74" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="27.94" y="33.655" rot="R90"/>
+<element name="U$75" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="17.78" y="33.655" rot="R90"/>
+<element name="U$76" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="7.62" y="33.655" rot="R90"/>
+<element name="U$77" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="74.93" y="29.845"/>
 <element name="U$78" library="nickparts" package="PROTOPAD-3" value="PROTOPAD-3" x="74.93" y="15.875"/>
-<element name="U$79" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="77.47" y="29.845"/>
+<element name="U$79" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="77.47" y="29.845"/>
 <element name="U$80" library="nickparts" package="PROTOPAD-3" value="PROTOPAD-3" x="77.47" y="15.875"/>
-<element name="U$81" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="27.94" y="36.195" rot="R90"/>
-<element name="U$82" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="17.78" y="36.195" rot="R90"/>
-<element name="U$83" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="7.62" y="36.195" rot="R90"/>
-<element name="U$84" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="7.62" y="38.735" rot="R90"/>
-<element name="U$85" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="17.78" y="38.735" rot="R90"/>
-<element name="U$86" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="27.94" y="38.735" rot="R90"/>
-<element name="U$87" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="27.94" y="41.275" rot="R90"/>
-<element name="U$88" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="17.78" y="41.275" rot="R90"/>
-<element name="U$89" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="7.62" y="41.275" rot="R90"/>
-<element name="U$90" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="7.62" y="10.795" rot="R90"/>
-<element name="U$91" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="17.78" y="10.795" rot="R90"/>
-<element name="U$92" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="27.94" y="10.795" rot="R90"/>
-<element name="U$93" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="7.62" y="8.255" rot="R90"/>
-<element name="U$94" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="17.78" y="8.255" rot="R90"/>
-<element name="U$95" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="27.94" y="8.255" rot="R90"/>
-<element name="U$96" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="27.94" y="5.715" rot="R90"/>
-<element name="U$97" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="17.78" y="5.715" rot="R90"/>
-<element name="U$98" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="27.94" y="3.175" rot="R90"/>
-<element name="U$99" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="17.78" y="3.175" rot="R90"/>
-<element name="U$100" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="27.94" y="43.815" rot="R90"/>
-<element name="U$101" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="17.78" y="43.815" rot="R90"/>
-<element name="U$102" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="27.94" y="46.355" rot="R90"/>
-<element name="U$103" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4" x="17.78" y="46.355" rot="R90"/>
-<element name="U$104" library="nickparts" package="PROTOPAD-2" value="PROTOPAD-2" x="11.43" y="45.085"/>
-<element name="U$105" library="nickparts" package="PROTOPAD-2" value="PROTOPAD-2" x="11.43" y="4.445"/>
-<element name="U$106" library="nickparts" package="PROTOPAD-2" value="PROTOPAD-2" x="8.89" y="4.445"/>
-<element name="U$107" library="nickparts" package="PROTOPAD-2" value="PROTOPAD-2" x="8.89" y="45.085"/>
+<element name="U$81" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="27.94" y="36.195" rot="R90"/>
+<element name="U$82" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="17.78" y="36.195" rot="R90"/>
+<element name="U$83" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="7.62" y="36.195" rot="R90"/>
+<element name="U$84" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="7.62" y="38.735" rot="R90"/>
+<element name="U$85" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="17.78" y="38.735" rot="R90"/>
+<element name="U$86" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="27.94" y="38.735" rot="R90"/>
+<element name="U$87" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="27.94" y="41.275" rot="R90"/>
+<element name="U$88" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="17.78" y="41.275" rot="R90"/>
+<element name="U$89" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="7.62" y="41.275" rot="R90"/>
+<element name="U$90" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="7.62" y="10.795" rot="R90"/>
+<element name="U$91" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="17.78" y="10.795" rot="R90"/>
+<element name="U$92" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="27.94" y="10.795" rot="R90"/>
+<element name="U$93" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="7.62" y="8.255" rot="R90"/>
+<element name="U$94" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="17.78" y="8.255" rot="R90"/>
+<element name="U$95" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="27.94" y="8.255" rot="R90"/>
+<element name="U$96" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="27.94" y="5.715" rot="R90"/>
+<element name="U$97" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="17.78" y="5.715" rot="R90"/>
+<element name="U$98" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="27.94" y="3.175" rot="R90"/>
+<element name="U$99" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="17.78" y="3.175" rot="R90"/>
+<element name="U$100" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="27.94" y="43.815" rot="R90"/>
+<element name="U$101" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="17.78" y="43.815" rot="R90"/>
+<element name="U$102" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="27.94" y="46.355" rot="R90"/>
+<element name="U$103" library="nickparts" package="PROTOPAD-4" value="PROTOPAD-4SQUARE" x="17.78" y="46.355" rot="R90"/>
+<element name="U$104" library="nickparts" package="PROTOPAD-2" value="PROTOPAD-2SQUARE" x="11.43" y="45.085"/>
+<element name="U$105" library="nickparts" package="PROTOPAD-2" value="PROTOPAD-2SQUARE" x="11.43" y="4.445"/>
+<element name="U$106" library="nickparts" package="PROTOPAD-2" value="PROTOPAD-2SQUARE" x="8.89" y="4.445"/>
+<element name="U$107" library="nickparts" package="PROTOPAD-2" value="PROTOPAD-2SQUARE" x="8.89" y="45.085"/>
 <element name="U$108" library="SparkFun-Aesthetics" package="OSHW-LOGO-M" value="" x="36.83" y="9.525"/>
 </elements>
 <signals>
@@ -1304,9 +1314,10 @@ design rules under a new name.</description>
 <wire x1="77.47" y1="28.575" x2="77.47" y2="26.035" width="0.508" layer="16"/>
 <wire x1="77.47" y1="26.035" x2="76.2" y2="24.765" width="0.508" layer="1"/>
 <wire x1="76.2" y1="24.765" x2="51.435" y2="24.765" width="0.508" layer="1"/>
-<wire x1="51.435" y1="24.765" x2="50.8" y2="24.13" width="0.508" layer="1"/>
 <wire x1="50.8" y1="24.13" x2="50.8" y2="12.065" width="0.508" layer="1"/>
 <wire x1="50.8" y1="12.065" x2="52.07" y2="10.795" width="0.508" layer="1"/>
+<wire x1="51.435" y1="24.765" x2="50.8" y2="24.765" width="0.508" layer="1"/>
+<wire x1="50.8" y1="24.765" x2="50.8" y2="24.13" width="0.508" layer="1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="U$1" pad="I+3V3"/>
@@ -1883,11 +1894,11 @@ design rules under a new name.</description>
 <signal name="N$29">
 <contactref element="U$1" pad="I2.4"/>
 <contactref element="U$30" pad="P$4"/>
-<wire x1="44.45" y1="36.195" x2="45.085" y2="36.195" width="0.508" layer="16"/>
 <wire x1="45.085" y1="36.195" x2="46.99" y2="38.1" width="0.508" layer="16"/>
 <wire x1="46.99" y1="38.1" x2="48.26" y2="38.1" width="0.508" layer="16"/>
 <wire x1="48.26" y1="38.1" x2="49.53" y2="39.37" width="0.508" layer="16"/>
 <wire x1="49.53" y1="39.37" x2="49.53" y2="39.815" width="0.508" layer="16"/>
+<wire x1="44.45" y1="36.195" x2="45.085" y2="36.195" width="0.508" layer="16"/>
 </signal>
 <signal name="N$30">
 <contactref element="U$1" pad="I2.3"/>

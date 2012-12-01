@@ -1828,17 +1828,27 @@ We've spent an enormous amount of time creating and checking these footprints an
 <library name="nickparts">
 <packages>
 <package name="PROTOPAD-3">
-<pad name="P$1" x="0" y="2.54" drill="0.9" diameter="1.6764"/>
-<pad name="P$2" x="0" y="0" drill="0.9" diameter="1.6764"/>
-<pad name="P$3" x="0" y="-2.54" drill="0.9" diameter="1.6764"/>
+<pad name="P$1" x="0" y="2.54" drill="0.9" diameter="1.6764" shape="square"/>
+<pad name="P$2" x="0" y="0" drill="0.9" diameter="1.6764" shape="square"/>
+<pad name="P$3" x="0" y="-2.54" drill="0.9" diameter="1.6764" shape="square"/>
 </package>
 <package name="PROTOPAD-4">
+<pad name="P$1" x="0" y="3.81" drill="0.9" diameter="1.6764" shape="square"/>
+<pad name="P$2" x="0" y="1.27" drill="0.9" diameter="1.6764" shape="square"/>
+<pad name="P$3" x="0" y="-1.27" drill="0.9" diameter="1.6764" shape="square"/>
+<pad name="P$4" x="0" y="-3.81" drill="0.9" diameter="1.6764" shape="square"/>
+</package>
+<package name="PROTOPAD-2">
+<pad name="P$1" x="0" y="1.27" drill="0.9" diameter="1.6764" shape="square"/>
+<pad name="P$2" x="0" y="-1.27" drill="0.9" diameter="1.6764" shape="square"/>
+</package>
+<package name="PROTOPAD-4-ROUND">
 <pad name="P$1" x="0" y="3.81" drill="0.9" diameter="1.6764"/>
 <pad name="P$2" x="0" y="1.27" drill="0.9" diameter="1.6764"/>
 <pad name="P$3" x="0" y="-1.27" drill="0.9" diameter="1.6764"/>
 <pad name="P$4" x="0" y="-3.81" drill="0.9" diameter="1.6764"/>
 </package>
-<package name="PROTOPAD-2">
+<package name="PROTOPAD-2-ROUND">
 <pad name="P$1" x="0" y="1.27" drill="0.9" diameter="1.6764"/>
 <pad name="P$2" x="0" y="-1.27" drill="0.9" diameter="1.6764"/>
 </package>
@@ -1892,7 +1902,18 @@ We've spent an enormous amount of time creating and checking these footprints an
 <gate name="G$1" symbol="PROTOPAD-4" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PROTOPAD-4">
+<device name="SQUARE" package="PROTOPAD-4">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ROUND" package="PROTOPAD-4-ROUND">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
@@ -1910,7 +1931,16 @@ We've spent an enormous amount of time creating and checking these footprints an
 <gate name="G$1" symbol="PROTOPAD-2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PROTOPAD-2">
+<device name="SQUARE" package="PROTOPAD-2">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ROUND" package="PROTOPAD-2-ROUND">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
@@ -1966,96 +1996,96 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="U$20" library="nickparts" deviceset="PROTOPAD-3" device=""/>
 <part name="U$21" library="nickparts" deviceset="PROTOPAD-3" device=""/>
 <part name="U$22" library="nickparts" deviceset="PROTOPAD-3" device=""/>
-<part name="U$23" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$24" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$25" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$26" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$27" library="nickparts" deviceset="PROTOPAD-2" device=""/>
-<part name="U$28" library="nickparts" deviceset="PROTOPAD-2" device=""/>
-<part name="U$29" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$30" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$31" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$32" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$33" library="nickparts" deviceset="PROTOPAD-2" device=""/>
-<part name="U$34" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$35" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$36" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$37" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$38" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$39" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$40" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$41" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$42" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$43" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$44" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$45" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$46" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$47" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$48" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$49" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$50" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$51" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$52" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$53" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$54" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$55" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$56" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$57" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$58" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$59" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$60" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$61" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$62" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$63" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$64" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$65" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$66" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$67" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$68" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$69" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$70" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$71" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$72" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$73" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$74" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$75" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$76" library="nickparts" deviceset="PROTOPAD-4" device=""/>
+<part name="U$23" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$24" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$25" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$26" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$27" library="nickparts" deviceset="PROTOPAD-2" device="SQUARE"/>
+<part name="U$28" library="nickparts" deviceset="PROTOPAD-2" device="SQUARE"/>
+<part name="U$29" library="nickparts" deviceset="PROTOPAD-4" device="ROUND"/>
+<part name="U$30" library="nickparts" deviceset="PROTOPAD-4" device="ROUND"/>
+<part name="U$31" library="nickparts" deviceset="PROTOPAD-4" device="ROUND"/>
+<part name="U$32" library="nickparts" deviceset="PROTOPAD-4" device="ROUND"/>
+<part name="U$33" library="nickparts" deviceset="PROTOPAD-2" device="ROUND"/>
+<part name="U$34" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$35" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$36" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$37" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$38" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$39" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$40" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$41" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$42" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$43" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$44" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$45" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$46" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$47" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$48" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$49" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$50" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$51" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$52" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$53" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$54" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$55" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$56" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$57" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$58" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$59" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$60" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$61" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$62" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$63" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$64" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$65" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$66" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$67" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$68" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$69" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$70" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$71" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$72" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$73" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$74" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$75" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$76" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
-<part name="U$77" library="nickparts" deviceset="PROTOPAD-4" device=""/>
+<part name="U$77" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
 <part name="U$78" library="nickparts" deviceset="PROTOPAD-3" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="U$79" library="nickparts" deviceset="PROTOPAD-4" device=""/>
+<part name="U$79" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
 <part name="U$80" library="nickparts" deviceset="PROTOPAD-3" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
-<part name="U$81" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$82" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$83" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$84" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$85" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$86" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$87" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$88" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$89" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$90" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$91" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$92" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$93" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$94" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$95" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$96" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$97" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$98" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$99" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$100" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$101" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$102" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$103" library="nickparts" deviceset="PROTOPAD-4" device=""/>
-<part name="U$104" library="nickparts" deviceset="PROTOPAD-2" device=""/>
-<part name="U$105" library="nickparts" deviceset="PROTOPAD-2" device=""/>
-<part name="U$106" library="nickparts" deviceset="PROTOPAD-2" device=""/>
-<part name="U$107" library="nickparts" deviceset="PROTOPAD-2" device=""/>
+<part name="U$81" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$82" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$83" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$84" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$85" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$86" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$87" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$88" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$89" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$90" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$91" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$92" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$93" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$94" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$95" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$96" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$97" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$98" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$99" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$100" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$101" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$102" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$103" library="nickparts" deviceset="PROTOPAD-4" device="SQUARE"/>
+<part name="U$104" library="nickparts" deviceset="PROTOPAD-2" device="SQUARE"/>
+<part name="U$105" library="nickparts" deviceset="PROTOPAD-2" device="SQUARE"/>
+<part name="U$106" library="nickparts" deviceset="PROTOPAD-2" device="SQUARE"/>
+<part name="U$107" library="nickparts" deviceset="PROTOPAD-2" device="SQUARE"/>
 </parts>
 <sheets>
 <sheet>
