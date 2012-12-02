@@ -118,7 +118,7 @@
 </layers>
 <board>
 <plain>
-<text x="25.4" y="46.355" size="2.032" layer="1" font="vector" align="bottom-center">Display Plank v0.1</text>
+<text x="25.4" y="46.355" size="2.032" layer="1" font="vector" align="bottom-center">Loki Display Plank v0.1</text>
 </plain>
 <libraries>
 <library name="loki">
