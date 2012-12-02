@@ -11129,7 +11129,6 @@ A3 Larger Frame</description>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-A3" device=""/>
 <part name="D3" library="adafruit" deviceset="DIODE" device="SMA"/>
 <part name="U$7" library="ondraster" deviceset="MICROUSB" device=""/>
-<part name="GND2" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11272,7 +11271,6 @@ A3 Larger Frame</description>
 <instance part="FRAME1" gate="G$1" x="279.4" y="-45.72"/>
 <instance part="D3" gate="G$1" x="556.26" y="182.88"/>
 <instance part="U$7" gate="G$1" x="482.6" y="93.98" rot="MR0"/>
-<instance part="GND2" gate="1" x="500.38" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -11413,31 +11411,6 @@ A3 Larger Frame</description>
 <wire x1="381" y1="5.08" x2="383.54" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="383.54" y1="5.08" x2="383.54" y2="7.62" width="0.1524" layer="91"/>
 <junction x="383.54" y="7.62"/>
-</segment>
-<segment>
-<pinref part="U$7" gate="G$1" pin="SH@1"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="497.84" y1="99.06" x2="500.38" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="500.38" y1="99.06" x2="500.38" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="SH@6"/>
-<wire x1="500.38" y1="96.52" x2="500.38" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="500.38" y1="93.98" x2="500.38" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="500.38" y1="91.44" x2="500.38" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="500.38" y1="88.9" x2="500.38" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="500.38" y1="86.36" x2="497.84" y2="86.36" width="0.1524" layer="91"/>
-<junction x="500.38" y="86.36"/>
-<pinref part="U$7" gate="G$1" pin="SH@5"/>
-<wire x1="500.38" y1="88.9" x2="497.84" y2="88.9" width="0.1524" layer="91"/>
-<junction x="500.38" y="88.9"/>
-<pinref part="U$7" gate="G$1" pin="SH@4"/>
-<wire x1="500.38" y1="91.44" x2="497.84" y2="91.44" width="0.1524" layer="91"/>
-<junction x="500.38" y="91.44"/>
-<pinref part="U$7" gate="G$1" pin="SH@3"/>
-<wire x1="500.38" y1="93.98" x2="497.84" y2="93.98" width="0.1524" layer="91"/>
-<junction x="500.38" y="93.98"/>
-<pinref part="U$7" gate="G$1" pin="SH@2"/>
-<wire x1="500.38" y1="96.52" x2="497.84" y2="96.52" width="0.1524" layer="91"/>
-<junction x="500.38" y="96.52"/>
 </segment>
 </net>
 <net name="+5V" class="0">
