@@ -1078,7 +1078,6 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 <wire x1="8" y1="8" x2="8" y2="0" width="0.127" layer="21"/>
 <wire x1="8" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
 <wire x1="0" y1="0" x2="0" y2="-0.1" width="0.127" layer="21"/>
-<smd name="P$CENTER" x="4" y="4" dx="4.5" dy="4.5" layer="1"/>
 <smd name="P$1" x="0.1" y="7.2" dx="0.2" dy="0.6" layer="1" roundness="10" rot="R90"/>
 <smd name="P$2" x="0.1" y="6.8" dx="0.2" dy="0.6" layer="1" roundness="10" rot="R90"/>
 <smd name="P$3" x="0.1" y="6.4" dx="0.2" dy="0.6" layer="1" roundness="10" rot="R90"/>
@@ -1148,7 +1147,10 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 <smd name="P$67" x="1.2" y="7.9" dx="0.2" dy="0.6" layer="1" roundness="10"/>
 <smd name="P$68" x="0.8" y="7.9" dx="0.2" dy="0.6" layer="1" roundness="10"/>
 <circle x="0.8" y="7.2" radius="0.1" width="0.2" layer="21"/>
-<text x="-0.2" y="8.5" size="1.27" layer="21">$NAME</text>
+<text x="-0.2" y="8.5" size="1.27" layer="21" font="vector">&gt;NAME</text>
+<smd name="P$CENTER" x="4" y="4" dx="4.25" dy="4.25" layer="1" stop="no" cream="no"/>
+<rectangle x1="1.775" y1="1.775" x2="6.225" y2="6.225" layer="29"/>
+<rectangle x1="2.725" y1="2.725" x2="5.275" y2="5.275" layer="31"/>
 </package>
 </packages>
 <symbols>
