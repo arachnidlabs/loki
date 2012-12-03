@@ -4292,8 +4292,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="P+3" library="supply1" deviceset="V+" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1u"/>
-<part name="C2" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1u"/>
+<part name="C1" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1u"/>
+<part name="C2" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1u"/>
 <part name="C3" library="SparkFun-Passives" deviceset="CAP_POL" device="C" value="10u"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>

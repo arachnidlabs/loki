@@ -262,7 +262,7 @@
 <text x="54.61" y="9.8425" size="0.762" layer="21" rot="R180" align="bottom-center">+3v3</text>
 <text x="52.07" y="9.8425" size="0.762" layer="21" rot="R180" align="bottom-center">+5v</text>
 <text x="49.53" y="9.8425" size="0.762" layer="21" rot="R180" align="bottom-center">VIN</text>
-<text x="41.275" y="47.3075" size="1.524" layer="21" align="bottom-center">Loki Protoplank 1.0</text>
+<text x="41.275" y="47.3075" size="1.524" layer="21" align="bottom-center">Loki Protoplank v0.1</text>
 <wire x1="2.8575" y1="7.3025" x2="9.8425" y2="7.3025" width="0.254" layer="21"/>
 <wire x1="9.8425" y1="7.3025" x2="9.8425" y2="9.2075" width="0.254" layer="21"/>
 <wire x1="9.8425" y1="9.2075" x2="2.8575" y2="9.2075" width="0.254" layer="21"/>

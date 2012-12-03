@@ -119,6 +119,7 @@
 <board>
 <plain>
 <wire x1="72.47" y1="0" x2="1.27" y2="0" width="0" layer="20"/>
+<text x="40.005" y="0.635" size="0.762" layer="21" font="vector" align="bottom-center">PSoC Loki v0.1</text>
 </plain>
 <libraries>
 <library name="SparkFun-Passives">
