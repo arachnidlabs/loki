@@ -11847,11 +11847,6 @@ A3 Larger Frame</description>
 <label x="378.46" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="4"/>
-<wire x1="381" y1="0" x2="386.08" y2="0" width="0.1524" layer="91"/>
-<label x="381" y="0" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$11" gate="G$1" pin="SCL"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="474.98" y1="142.24" x2="490.22" y2="142.24" width="0.1524" layer="91"/>
@@ -11859,6 +11854,11 @@ A3 Larger Frame</description>
 <wire x1="490.22" y1="142.24" x2="492.76" y2="142.24" width="0.1524" layer="91"/>
 <junction x="490.22" y="142.24"/>
 <label x="490.22" y="142.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="G$1" pin="5"/>
+<wire x1="381" y1="-2.54" x2="386.08" y2="-2.54" width="0.1524" layer="91"/>
+<label x="381" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA0" class="0">
@@ -11868,11 +11868,6 @@ A3 Larger Frame</description>
 <label x="378.46" y="170.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="5"/>
-<wire x1="381" y1="-2.54" x2="386.08" y2="-2.54" width="0.1524" layer="91"/>
-<label x="381" y="-2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$11" gate="G$1" pin="SDA"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="474.98" y1="139.7" x2="497.84" y2="139.7" width="0.1524" layer="91"/>
@@ -11880,6 +11875,11 @@ A3 Larger Frame</description>
 <wire x1="497.84" y1="139.7" x2="500.38" y2="139.7" width="0.1524" layer="91"/>
 <junction x="497.84" y="139.7"/>
 <label x="497.84" y="139.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="G$1" pin="4"/>
+<wire x1="381" y1="0" x2="386.08" y2="0" width="0.1524" layer="91"/>
+<label x="381" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P2[0]" class="0">
