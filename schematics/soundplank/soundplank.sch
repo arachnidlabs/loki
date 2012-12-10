@@ -4017,9 +4017,9 @@ PNA4602 and related receivers
 <label x="116.84" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="I1" pin="8"/>
-<wire x1="7.62" y1="88.9" x2="10.16" y2="88.9" width="0.1524" layer="91"/>
-<label x="7.62" y="88.9" size="1.778" layer="95"/>
+<pinref part="U$1" gate="I1" pin="7"/>
+<wire x1="7.62" y1="91.44" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
+<label x="7.62" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUTR" class="0">
@@ -4031,9 +4031,9 @@ PNA4602 and related receivers
 <label x="116.84" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="I1" pin="7"/>
-<wire x1="7.62" y1="91.44" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
-<label x="7.62" y="91.44" size="1.778" layer="95"/>
+<pinref part="U$1" gate="I1" pin="8"/>
+<wire x1="7.62" y1="88.9" x2="10.16" y2="88.9" width="0.1524" layer="91"/>
+<label x="7.62" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VOL" class="0">
@@ -4091,9 +4091,9 @@ PNA4602 and related receivers
 <label x="111.76" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="I2" pin="2"/>
-<wire x1="43.18" y1="104.14" x2="48.26" y2="104.14" width="0.1524" layer="91"/>
-<label x="45.72" y="104.14" size="1.778" layer="95"/>
+<pinref part="U$1" gate="I2" pin="1"/>
+<wire x1="43.18" y1="106.68" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
+<label x="45.72" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INR" class="0">
@@ -4105,9 +4105,9 @@ PNA4602 and related receivers
 <label x="116.84" y="2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="I2" pin="1"/>
-<wire x1="43.18" y1="106.68" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
-<label x="45.72" y="106.68" size="1.778" layer="95"/>
+<pinref part="U$1" gate="I2" pin="2"/>
+<wire x1="43.18" y1="104.14" x2="48.26" y2="104.14" width="0.1524" layer="91"/>
+<label x="45.72" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$30" class="0">
