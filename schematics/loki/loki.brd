@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="6" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="6" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -24,7 +24,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -120,18 +120,14 @@
 <plain>
 <wire x1="72.47" y1="0" x2="1.27" y2="0" width="0" layer="20"/>
 <text x="40.005" y="0.635" size="0.762" layer="21" font="vector" align="bottom-center">PSoC Loki v0.1.1</text>
-<circle x="-40" y="-40" radius="1.25" width="0.1" layer="144"/>
-<circle x="-40" y="90" radius="1.25" width="0.1" layer="144"/>
-<circle x="120" y="-40" radius="1.25" width="0.1" layer="144"/>
-<circle x="120" y="90" radius="1.25" width="0.1" layer="144"/>
-<wire x1="127.5" y1="-48" x2="-47.5" y2="-48" width="0.1" layer="249"/>
-<wire x1="-47.5" y1="-48" x2="-50" y2="-45.5" width="0.1" layer="249" curve="-90"/>
-<wire x1="-50" y1="-45.5" x2="-50" y2="95.5" width="0.1" layer="249"/>
-<wire x1="-50" y1="95.5" x2="-47.5" y2="98" width="0.1" layer="249" curve="-90"/>
-<wire x1="-47.5" y1="98" x2="127.5" y2="98" width="0.1" layer="249"/>
-<wire x1="127.5" y1="98" x2="130" y2="95.5" width="0.1" layer="249" curve="-90"/>
-<wire x1="130" y1="95.5" x2="130" y2="-45.5" width="0.1" layer="249"/>
-<wire x1="130" y1="-45.5" x2="127.5" y2="-48" width="0.1" layer="249" curve="-90"/>
+<circle x="-40" y="-40" radius="1.25" width="0.1" layer="31"/>
+<circle x="-40" y="90" radius="1.25" width="0.1" layer="31"/>
+<circle x="120" y="-40" radius="1.25" width="0.1" layer="31"/>
+<circle x="120" y="90" radius="1.25" width="0.1" layer="31"/>
+<wire x1="130" y1="-48" x2="-50" y2="-48" width="0.1" layer="249"/>
+<wire x1="-50" y1="-48" x2="-50" y2="98" width="0.1" layer="249"/>
+<wire x1="-50" y1="98" x2="130" y2="98" width="0.1" layer="249"/>
+<wire x1="130" y1="98" x2="130" y2="-48" width="0.1" layer="249"/>
 </plain>
 <libraries>
 <library name="SparkFun-Passives">
