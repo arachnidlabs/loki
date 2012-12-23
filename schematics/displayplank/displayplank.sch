@@ -3918,6 +3918,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="C2" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1u"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100k"/>
 </parts>
 <sheets>
 <sheet>
@@ -3947,7 +3948,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="R4" gate="G$1" x="109.22" y="30.48" rot="R90"/>
 <instance part="Q1" gate="G$1" x="96.52" y="10.16"/>
 <instance part="P+3" gate="1" x="96.52" y="40.64"/>
-<instance part="GND4" gate="1" x="96.52" y="0"/>
+<instance part="GND4" gate="1" x="96.52" y="-5.08"/>
 <instance part="U$5" gate="G$1" x="116.84" y="-25.4"/>
 <instance part="+3V4" gate="G$1" x="114.3" y="-7.62"/>
 <instance part="U$3" gate="G$1" x="27.94" y="-17.78"/>
@@ -3958,6 +3959,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="P+4" gate="1" x="127" y="-38.1"/>
 <instance part="C2" gate="G$1" x="127" y="-45.72"/>
 <instance part="GND7" gate="1" x="127" y="-50.8"/>
+<instance part="R5" gate="G$1" x="88.9" y="5.08" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -4044,7 +4046,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <pinref part="Q1" gate="G$1" pin="S"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="96.52" y1="5.08" x2="96.52" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="5.08" x2="96.52" y2="0" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="0" x2="96.52" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="0" x2="96.52" y2="0" width="0.1524" layer="91"/>
+<junction x="96.52" y="0"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="GND"/>
@@ -4206,6 +4212,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="Q1" gate="G$1" pin="G"/>
 <wire x1="88.9" y1="10.16" x2="83.82" y2="10.16" width="0.1524" layer="91"/>
 <label x="81.28" y="10.16" size="1.778" layer="95"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<junction x="88.9" y="10.16"/>
 </segment>
 </net>
 <net name="N$2" class="0">
