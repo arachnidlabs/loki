@@ -228,18 +228,6 @@
 <wire x1="80" y1="20" x2="80" y2="29" width="0" layer="20"/>
 <wire x1="80" y1="45" x2="80" y2="29" width="0" layer="102"/>
 <wire x1="80" y1="4" x2="80" y2="20" width="0" layer="102"/>
-<wire x1="-5" y1="40.75" x2="-5.75" y2="40" width="0" layer="249" curve="90"/>
-<wire x1="-5.75" y1="40" x2="-5" y2="39.25" width="0" layer="249" curve="90"/>
-<wire x1="-5" y1="39.25" x2="-4.25" y2="40" width="0" layer="249" curve="90"/>
-<wire x1="-4.25" y1="40" x2="-5" y2="40.75" width="0" layer="249" curve="90"/>
-<wire x1="-5" y1="10.75" x2="-5.75" y2="10" width="0" layer="249" curve="90"/>
-<wire x1="-5.75" y1="10" x2="-5" y2="9.25" width="0" layer="249" curve="90"/>
-<wire x1="-5" y1="9.25" x2="-4.25" y2="10" width="0" layer="249" curve="90"/>
-<wire x1="-4.25" y1="10" x2="-5" y2="10.75" width="0" layer="249" curve="90"/>
-<wire x1="85" y1="10.75" x2="84.25" y2="10" width="0" layer="249" curve="90"/>
-<wire x1="84.25" y1="10" x2="85" y2="9.25" width="0" layer="249" curve="90"/>
-<wire x1="85" y1="9.25" x2="85.75" y2="10" width="0" layer="249" curve="90"/>
-<wire x1="85.75" y1="10" x2="85" y2="10.75" width="0" layer="249" curve="90"/>
 <wire x1="0" y1="45" x2="-1" y2="44" width="0" layer="20" curve="-90"/>
 <wire x1="-1" y1="44" x2="-9" y2="44" width="0" layer="20"/>
 <wire x1="-9" y1="44" x2="-10" y2="43" width="0" layer="20" curve="90"/>
@@ -256,18 +244,30 @@
 <wire x1="81" y1="5" x2="89" y2="5" width="0" layer="20"/>
 <wire x1="89" y1="5" x2="90" y2="6" width="0" layer="20" curve="90"/>
 <wire x1="90" y1="6" x2="90" y2="12" width="0" layer="20"/>
-<wire x1="85" y1="40.75" x2="84.25" y2="40" width="0" layer="249" curve="90"/>
-<wire x1="84.25" y1="40" x2="85" y2="39.25" width="0" layer="249" curve="90"/>
-<wire x1="85" y1="39.25" x2="85.75" y2="40" width="0" layer="249" curve="90"/>
-<wire x1="85.75" y1="40" x2="85" y2="40.75" width="0" layer="249" curve="90"/>
-<hole x="-5" y="40" drill="1.5"/>
-<hole x="-5" y="10" drill="1.5"/>
-<hole x="85" y="40" drill="1.5"/>
-<hole x="85" y="10" drill="1.5"/>
+<hole x="-5" y="40" drill="2.5"/>
+<hole x="-5" y="10" drill="2.5"/>
+<hole x="85" y="40" drill="2.5"/>
+<hole x="85" y="10" drill="2.5"/>
 <wire x1="-10" y1="-50" x2="-10" y2="99" width="0" layer="249"/>
 <wire x1="-10" y1="99" x2="90" y2="99" width="0" layer="249"/>
 <wire x1="90" y1="99" x2="90" y2="-50" width="0" layer="249"/>
 <wire x1="90" y1="-50" x2="-10" y2="-50" width="0" layer="249"/>
+<wire x1="-5" y1="41.25" x2="-3.75" y2="40" width="0" layer="249" curve="-90"/>
+<wire x1="-3.75" y1="40" x2="-5" y2="38.75" width="0" layer="249" curve="-90"/>
+<wire x1="-5" y1="38.75" x2="-6.25" y2="40" width="0" layer="249" curve="-90"/>
+<wire x1="-6.25" y1="40" x2="-5" y2="41.25" width="0" layer="249" curve="-90"/>
+<wire x1="-5" y1="11.25" x2="-3.75" y2="10" width="0" layer="249" curve="-90"/>
+<wire x1="-3.75" y1="10" x2="-5" y2="8.75" width="0" layer="249" curve="-90"/>
+<wire x1="-5" y1="8.75" x2="-6.25" y2="10" width="0" layer="249" curve="-90"/>
+<wire x1="-6.25" y1="10" x2="-5" y2="11.25" width="0" layer="249" curve="-90"/>
+<wire x1="85" y1="11.25" x2="86.25" y2="10" width="0" layer="249" curve="-90"/>
+<wire x1="86.25" y1="10" x2="85" y2="8.75" width="0" layer="249" curve="-90"/>
+<wire x1="85" y1="8.75" x2="83.75" y2="10" width="0" layer="249" curve="-90"/>
+<wire x1="83.75" y1="10" x2="85" y2="11.25" width="0" layer="249" curve="-90"/>
+<wire x1="85" y1="41.25" x2="86.25" y2="40" width="0" layer="249" curve="-90"/>
+<wire x1="86.25" y1="40" x2="85" y2="38.75" width="0" layer="249" curve="-90"/>
+<wire x1="85" y1="38.75" x2="83.75" y2="40" width="0" layer="249" curve="-90"/>
+<wire x1="83.75" y1="40" x2="85" y2="41.25" width="0" layer="249" curve="-90"/>
 </plain>
 <libraries>
 <library name="SparkFun-Passives">
