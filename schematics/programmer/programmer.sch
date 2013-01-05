@@ -1821,6 +1821,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="P+3" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$3" library="ondraster" deviceset="MICROUSB" device=""/>
+<part name="P+1" library="SparkFun" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1858,6 +1859,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="P+3" gate="1" x="7.62" y="40.64"/>
 <instance part="GND9" gate="1" x="7.62" y="27.94"/>
 <instance part="U$3" gate="G$1" x="43.18" y="17.78"/>
+<instance part="P+1" gate="1" x="119.38" y="15.24"/>
 </instances>
 <busses>
 </busses>
@@ -1960,6 +1962,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <segment>
 <pinref part="U1" gate="G$1" pin="VCC"/>
 <pinref part="P+3" gate="1" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="A" pin="1"/>
+<pinref part="P+1" gate="1" pin="VCC"/>
+<wire x1="119.38" y1="15.24" x2="121.92" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="/RST" class="0">
@@ -2112,11 +2119,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="U2" gate="G$1" pin="EN"/>
 <wire x1="30.48" y1="-17.78" x2="25.4" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="25.4" y="-17.78"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="15.24" x2="116.84" y2="15.24" width="0.1524" layer="91"/>
-<label x="116.84" y="15.24" size="1.778" layer="95"/>
-<pinref part="JP4" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">

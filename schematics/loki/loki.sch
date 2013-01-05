@@ -11360,8 +11360,8 @@ A3 Larger Frame</description>
 <part name="SUPPLY11" library="supply2" deviceset="DGND" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="DGND" device=""/>
 <part name="VCC7" library="supply1" deviceset="+3V3" device=""/>
-<part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="C3" library="resistor" deviceset="C-US" device="C0603" value="1u"/>
+<part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11504,8 +11504,8 @@ A3 Larger Frame</description>
 <instance part="SUPPLY11" gate="G$1" x="45.72" y="172.72"/>
 <instance part="SUPPLY10" gate="G$1" x="190.5" y="172.72"/>
 <instance part="VCC7" gate="G$1" x="111.76" y="243.84"/>
-<instance part="P+4" gate="1" x="228.6" y="243.84"/>
 <instance part="C3" gate="G$1" x="335.28" y="172.72"/>
+<instance part="+3V5" gate="G$1" x="228.6" y="243.84"/>
 </instances>
 <busses>
 </busses>
@@ -11701,15 +11701,6 @@ A3 Larger Frame</description>
 <pinref part="P+12" gate="1" pin="+5V"/>
 <wire x1="121.92" y1="33.02" x2="101.6" y2="33.02" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="U3" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="238.76" x2="236.22" y2="238.76" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="236.22" y1="238.76" x2="228.6" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="238.76" x2="228.6" y2="241.3" width="0.1524" layer="91"/>
-<junction x="228.6" y="238.76"/>
-<pinref part="P+4" gate="1" pin="+5V"/>
-</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -11832,6 +11823,15 @@ A3 Larger Frame</description>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="241.3" x2="111.76" y2="238.76" width="0.1524" layer="91"/>
 <junction x="111.76" y="241.3"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="238.76" x2="236.22" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="236.22" y1="238.76" x2="228.6" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="238.76" x2="228.6" y2="241.3" width="0.1524" layer="91"/>
+<junction x="228.6" y="238.76"/>
+<pinref part="+3V5" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
