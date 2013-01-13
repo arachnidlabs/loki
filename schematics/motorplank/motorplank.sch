@@ -4300,8 +4300,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="U$5" library="nickparts" deviceset="BILED" device=""/>
 <part name="U$6" library="nickparts" deviceset="BILED" device=""/>
-<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="900"/>
+<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="900"/>
 </parts>
 <sheets>
 <sheet>
