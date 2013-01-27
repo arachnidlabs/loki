@@ -13,16 +13,21 @@ namespace LokiProgrammer
         protected LokiBootloaderHost host;
         protected HIDCommunicationsChannel channel;
         protected ObservableCollection<BoardInfo> planks = new ObservableCollection<BoardInfo>();
+        protected string usbDeviceName;
+        protected string siliconVersion;
+        protected uint bootloaderVersion;
 
-        public LokiInfo(LokiBootloaderHost host, HIDCommunicationsChannel channel, byte address) : base(address) {
-            this.host = host;
-            this.channel = channel;
+        public LokiInfo(string usbDeviceName, string siliconVersion, uint bootloaderVersion, byte address) : base(address) {
+            this.usbDeviceName = usbDeviceName;
+            this.siliconVersion = siliconVersion;
+            this.bootloaderVersion = bootloaderVersion;
             WatchPlanks();
         }
 
-        public LokiInfo(LokiBootloaderHost host, HIDCommunicationsChannel channel, Stream stream, byte address) : base(stream, address) {
-            this.host = host;
-            this.channel = channel;
+        public LokiInfo(string usbDeviceName, string siliconVersion, uint bootloaderVersion, Stream stream, byte address) : base(stream, address) {
+            this.usbDeviceName = usbDeviceName;
+            this.siliconVersion = siliconVersion;
+            this.bootloaderVersion = bootloaderVersion;
             WatchPlanks();
         }
 
@@ -58,27 +63,11 @@ namespace LokiProgrammer
             ComputePinMapping();
         }
 
-        public uint SiliconId
-        {
-            get
-            {
-                return this.host.SiliconId;
-            }
-        }
-
-        public uint SiliconRev
-        {
-            get
-            {
-                return this.host.SiliconRev;
-            }
-        }
-
         public uint BootloaderVersion
         {
             get
             {
-                return this.host.BootloaderVersion;
+                return this.bootloaderVersion;
             }
         }
 
@@ -86,7 +75,7 @@ namespace LokiProgrammer
         {
             get
             {
-                return string.Format("{0:X}.{1:X}", this.SiliconId, this.SiliconRev);
+                return this.siliconVersion;
             }
         }
 
@@ -94,7 +83,7 @@ namespace LokiProgrammer
         {
             get
             {
-                return string.Format("{0} {1} [{2:X}, {3:X}]", this.channel.Device.Manufacturer, this.channel.Device.Product, this.channel.Device.VendorID, this.channel.Device.ProductID);
+                return this.usbDeviceName;
             }
         }
 

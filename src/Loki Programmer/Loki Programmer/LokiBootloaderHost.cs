@@ -225,7 +225,12 @@ namespace LokiProgrammer
 
         public LokiInfo GetLokiInfo()
         {
-            LokiInfo loki = new LokiInfo(this, this._channel as HIDCommunicationsChannel, LOKI_EEPROM_ADDR);
+            HIDCommunicationsChannel channel = this._channel as HIDCommunicationsChannel;
+            LokiInfo loki = new LokiInfo(
+                string.Format("{0} {1} [{2:X}, {3:X}]", channel.Device.Manufacturer, channel.Device.Product, channel.Device.VendorID, channel.Device.ProductID),
+                string.Format("{0:X}.{1:X}", this.SiliconId, this.SiliconRev),
+                this.bootloaderVersion,
+                LOKI_EEPROM_ADDR);
             try
             {
                 loki.Deserialize(this.OpenEEPROM(LOKI_EEPROM_ADDR, 65536));
