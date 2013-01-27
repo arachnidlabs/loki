@@ -2,3 +2,7 @@
 *.s#*
 *.l#*
 *.gpi
+Debug
+Release
+*.opensdf
+Backup
