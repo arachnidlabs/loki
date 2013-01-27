@@ -78,9 +78,35 @@ namespace LokiProgrammer
         private void OnAttach()
         {
             loki = host.GetLokiInfo();
+            loki.PropertyChanged += loki_PropertyChanged;
 
-            foreach(BoardInfo plank in host.GetPlankInfo())
+            foreach (BoardInfo plank in host.GetPlankInfo())
+            {
                 loki.Planks.Add(plank);
+                plank.PropertyChanged += plank_PropertyChanged;
+            }
+        }
+
+        void loki_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName != "ProductName")
+                return;
+
+            deviceNode.Name = loki.ProductName;
+        }
+
+        void plank_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName != "ProductName")
+                return;
+
+            foreach (TreeNode plankNode in deviceNode.Nodes)
+            {
+                if (plankNode.Tag == sender)
+                {
+                    plankNode.Name = ((BoardInfo)sender).ProductName;
+                }
+            }
         }
 
         void usbHIDDevices_DeviceRemoved(object sender, EventArgs e)
@@ -225,7 +251,14 @@ namespace LokiProgrammer
         private void readEEPROMWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             deviceNode = new TreeNode();
-            deviceNode.Text = String.Format("{0} [{1:X}, {2:X}]", channel.Device.Product, channel.Device.VendorID, channel.Device.ProductID);
+            if (loki.ProductName != "" && loki.ProductName != null)
+            {
+                deviceNode.Text = loki.ProductName;
+            }
+            else
+            {
+                deviceNode.Text = String.Format("{0} [{1:X}, {2:X}]", channel.Device.Product, channel.Device.VendorID, channel.Device.ProductID);
+            }
             deviceNode.ImageKey = "Loki";
             deviceNode.SelectedImageKey = "Loki";
             deviceNode.Tag = loki;
