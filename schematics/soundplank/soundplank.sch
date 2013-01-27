@@ -3591,7 +3591,6 @@ PNA4602 and related receivers
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="SJ1" library="jumper" deviceset="SJ" device=""/>
-<part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="U$3" library="SparkFun-Connectors" deviceset="AUDIO-JACK2" device="PTH"/>
 <part name="U1" library="SparkFun-Connectors" deviceset="AUDIO-JACK" device="PTH"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
@@ -3639,10 +3638,9 @@ PNA4602 and related receivers
 <instance part="P+1" gate="1" x="27.94" y="38.1"/>
 <instance part="P+2" gate="1" x="25.4" y="40.64"/>
 <instance part="U$2" gate="G$1" x="58.42" y="27.94"/>
-<instance part="+3V3" gate="G$1" x="71.12" y="35.56"/>
+<instance part="+3V3" gate="G$1" x="91.44" y="35.56"/>
 <instance part="GND3" gate="1" x="45.72" y="22.86"/>
 <instance part="SJ1" gate="1" x="81.28" y="30.48"/>
-<instance part="GND4" gate="1" x="86.36" y="25.4"/>
 <instance part="U$3" gate="G$1" x="99.06" y="63.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="93.98" y="57.912" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="93.98" y="73.66" size="1.778" layer="96" rot="MR180"/>
@@ -3690,6 +3688,11 @@ PNA4602 and related receivers
 <segment>
 <pinref part="U$2" gate="G$1" pin="VCC"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<wire x1="91.44" y1="33.02" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="SJ1" gate="1" pin="2"/>
+<wire x1="86.36" y1="30.48" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="30.48" x2="91.44" y2="33.02" width="0.1524" layer="91"/>
+<junction x="91.44" y="33.02"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="1"/>
@@ -3723,11 +3726,6 @@ PNA4602 and related receivers
 <segment>
 <pinref part="U$2" gate="G$1" pin="VSS"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="SJ1" gate="1" pin="2"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="86.36" y1="30.48" x2="86.36" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="SLEEVE"/>

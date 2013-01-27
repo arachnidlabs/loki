@@ -2321,7 +2321,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="WP" library="jumper" deviceset="SJ" device=""/>
-<part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="U$3" library="nickparts" deviceset="PROTOPAD-3" device=""/>
 <part name="U$4" library="nickparts" deviceset="PROTOPAD-3" device=""/>
 <part name="U$5" library="nickparts" deviceset="PROTOPAD-3" device=""/>
@@ -2457,10 +2456,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="P+1" gate="1" x="27.94" y="38.1"/>
 <instance part="P+2" gate="1" x="25.4" y="40.64"/>
 <instance part="U$2" gate="G$1" x="58.42" y="27.94"/>
-<instance part="+3V3" gate="G$1" x="71.12" y="35.56"/>
+<instance part="+3V3" gate="G$1" x="91.44" y="35.56"/>
 <instance part="GND3" gate="1" x="45.72" y="22.86"/>
 <instance part="WP" gate="1" x="81.28" y="30.48"/>
-<instance part="GND4" gate="1" x="86.36" y="25.4"/>
 <instance part="U$3" gate="G$1" x="200.66" y="121.92"/>
 <instance part="U$4" gate="G$1" x="205.74" y="121.92"/>
 <instance part="U$5" gate="G$1" x="210.82" y="121.92"/>
@@ -2593,6 +2591,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <segment>
 <pinref part="U$2" gate="G$1" pin="VCC"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<wire x1="91.44" y1="33.02" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="WP" gate="1" pin="2"/>
+<wire x1="86.36" y1="30.48" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="30.48" x2="91.44" y2="33.02" width="0.1524" layer="91"/>
+<junction x="91.44" y="33.02"/>
 </segment>
 <segment>
 <pinref part="U$32" gate="G$1" pin="P$1"/>
@@ -2670,11 +2673,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <segment>
 <pinref part="U$2" gate="G$1" pin="VSS"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="WP" gate="1" pin="2"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="86.36" y1="30.48" x2="86.36" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$32" gate="G$1" pin="P$2"/>
