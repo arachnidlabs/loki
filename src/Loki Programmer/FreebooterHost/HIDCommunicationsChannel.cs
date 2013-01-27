@@ -36,8 +36,9 @@ namespace LokiProgrammer
             if (!_device.WriteOutput())
                 throw new CommunicationsError();
 
-            /* We neeed this delay for Bootload operation to be successsful */
-            System.Threading.Thread.Sleep(100);
+            /* Cypress's code suggests a delay is needed here for successful bootloading, but
+             * empirical testing suggests otherwise. Uncomment this if it becomes a problem. */
+            //System.Threading.Thread.Sleep(100);
         }
 
         public void ReadData(byte[] buffer, int size)
