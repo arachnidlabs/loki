@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="GameOfLife\GameOfLife\GameOfLife.cydwr">
+<ExpandedNodeIds>
+<v>GameOfLife</v>
+<v>GameOfLife\GameOfLife</v>
+<v>GameOfLife\GameOfLife\TopDesign.cysch</v>
+<v>GameOfLife\GameOfLife\GameOfLife.cydwr</v>
+<v>GameOfLife\GameOfLife\Header Files</v>
+<v>GameOfLife\GameOfLife\Header Files\device.h</v>
+<v>GameOfLife\GameOfLife\Source Files</v>
+<v>GameOfLife\GameOfLife\Source Files\main.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\Bootloadable_1</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\Bootloadable_1\Bootloadable_1.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\Bootloadable_1\Bootloadable_1.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\Clock_1</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\Clock_1\Clock_1.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\Clock_1\Clock_1.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\core_cm3.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\cypins.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\EEPROM_1</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\EEPROM_1\EEPROM_1.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\EEPROM_1\EEPROM_1.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1\LCD_1_lcd.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1\LCD_1_lcd.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1_LCD_Control</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1_LCD_Control\LCD_1_LCD_Control.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1_LCD_Control\LCD_1_LCD_Control.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1_LCD_DMA</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1_LCD_DMA\LCD_1_LCD_DMA_dma.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1_LCD_DMA\LCD_1_LCD_DMA_dma.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1_LCD_SPI</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1_LCD_SPI\LCD_1_LCD_SPI.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1_LCD_SPI\LCD_1_LCD_SPI.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1_LCD_SPI\LCD_1_LCD_SPI_INT.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1_LCD_SPI\LCD_1_LCD_SPI_PM.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1_LCD_SPI_IntClock</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1_LCD_SPI_IntClock\LCD_1_LCD_SPI_IntClock.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_1_LCD_SPI_IntClock\LCD_1_LCD_SPI_IntClock.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_D_C</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_D_C\LCD_D_C.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_D_C\LCD_D_C.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_D_C\LCD_D_C_aliases.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_LIGHT</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_LIGHT\LCD_LIGHT.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_LIGHT\LCD_LIGHT.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_LIGHT\LCD_LIGHT_aliases.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_MOSI</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_MOSI\LCD_MOSI.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_MOSI\LCD_MOSI.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_MOSI\LCD_MOSI_aliases.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_RESET</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_RESET\LCD_RESET.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_RESET\LCD_RESET.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_RESET\LCD_RESET_aliases.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_SCLK</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_SCLK\LCD_SCLK.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_SCLK\LCD_SCLK.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\LCD_SCLK\LCD_SCLK_aliases.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\PrISM_1</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\PrISM_1\PrISM_1.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\PrISM_1\PrISM_1.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\PrISM_1\PrISM_1_PM.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cydevice.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cydevicerv.inc</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cyfitter.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cyfitter_cfg.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cyfitter_cfg.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cyfittergnu.inc</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cyfitterrv.inc</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\project.h</v>
+<v>GameOfLife\Loki</v>
+<v>GameOfLife\Loki\Header Files</v>
+<v>GameOfLife\Loki\Source Files</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>GameOfLife</v>
+<v>GameOfLife\GameOfLife</v>
+<v>GameOfLife\GameOfLife\TopDesign.cysch</v>
+<v>GameOfLife\GameOfLife\GameOfLife.cydwr</v>
+<v>GameOfLife\GameOfLife\Header Files</v>
+<v>GameOfLife\GameOfLife\Header Files\device.h</v>
+<v>GameOfLife\GameOfLife\Source Files</v>
+<v>GameOfLife\GameOfLife\Source Files\main.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\Bootloadable_1</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\Bootloadable_1\Bootloadable_1.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\Bootloadable_1\Bootloadable_1.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\Clock_1</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\Clock_1\Clock_1.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\Clock_1\Clock_1.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\core_cm3.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\cypins.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
+<v>GameOfLife\GameOfLife\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="GameOfLife\Loki\PCD8544_LCD">
+<ExpandedNodeIds>
+<v>GameOfLife</v>
+<v>GameOfLife\GameOfLife</v>
+<v>GameOfLife\GameOfLife\TopDesign</v>
+<v>GameOfLife\GameOfLife\TopDesign\TopDesign.cysch</v>
+<v>GameOfLife\Loki</v>
+<v>GameOfLife\Loki\PCD8544_LCD</v>
+<v>GameOfLife\Loki\PCD8544_LCD\PSoC5</v>
+<v>GameOfLife\Loki\PCD8544_LCD\PSoC5\API</v>
+<v>GameOfLife\Loki\PCD8544_LCD\PSoC5\API\LCD.c</v>
+<v>GameOfLife\Loki\PCD8544_LCD\PSoC5\API\LCD.h</v>
+<v>GameOfLife\Loki\PCD8544_LCD\PCD8544_LCD.cysch</v>
+<v>GameOfLife\Loki\PCD8544_LCD\PCD8544_LCD.cysym</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>GameOfLife</v>
+<v>GameOfLife\GameOfLife</v>
+<v>GameOfLife\GameOfLife\TopDesign</v>
+<v>GameOfLife\GameOfLife\TopDesign\TopDesign.cysch</v>
+<v>GameOfLife\Loki</v>
+<v>GameOfLife\Loki\PCD8544_LCD</v>
+<v>GameOfLife\Loki\PCD8544_LCD\PSoC5</v>
+<v>GameOfLife\Loki\PCD8544_LCD\PSoC5\API</v>
+<v>GameOfLife\Loki\PCD8544_LCD\PSoC5\API\LCD.c</v>
+<v>GameOfLife\Loki\PCD8544_LCD\PSoC5\API\LCD.h</v>
+<v>GameOfLife\Loki\PCD8544_LCD\PCD8544_LCD.cysch</v>
+<v>GameOfLife\Loki\PCD8544_LCD\PCD8544_LCD.cysym</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>GameOfLife</v>
+<v>GameOfLife\GameOfLife</v>
+<v>GameOfLife\GameOfLife\CortexM3</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Debug</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Debug\GameOfLife.cyacd</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Debug\GameOfLife.elf</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Debug\GameOfLife.hex</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Debug\GameOfLife.map</v>
+<v>GameOfLife\GameOfLife\GameOfLife.rpt</v>
+<v>GameOfLife\GameOfLife\GameOfLife_timing.html</v>
+<v>GameOfLife\Loki</v>
+<v>GameOfLife\Loki\CortexM3</v>
+<v>GameOfLife\Loki\CortexM3\ARM_GCC_441</v>
+<v>GameOfLife\Loki\CortexM3\ARM_GCC_441\Debug</v>
+<v>GameOfLife\Loki\CortexM3\ARM_GCC_441\Debug\Loki.a</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>GameOfLife</v>
+<v>GameOfLife\GameOfLife</v>
+<v>GameOfLife\GameOfLife\CortexM3</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Debug</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Debug\GameOfLife.cyacd</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Debug\GameOfLife.elf</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Debug\GameOfLife.hex</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Debug\GameOfLife.map</v>
+<v>GameOfLife\GameOfLife\GameOfLife.rpt</v>
+<v>GameOfLife\GameOfLife\GameOfLife_timing.html</v>
+<v>GameOfLife\Loki</v>
+<v>GameOfLife\Loki\CortexM3</v>
+<v>GameOfLife\Loki\CortexM3\ARM_GCC_441</v>
+<v>GameOfLife\Loki\CortexM3\ARM_GCC_441\Debug</v>
+<v>GameOfLife\Loki\CortexM3\ARM_GCC_441\Debug\Loki.a</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>GameOfLife</v>
+<v>GameOfLife\GameOfLife</v>
+<v>GameOfLife\GameOfLife\PSoC 5 Architecture TRM</v>
+<v>GameOfLife\GameOfLife\CY8C53 Family Datasheet</v>
+<v>GameOfLife\GameOfLife\System Reference Guide v3_10</v>
+<v>GameOfLife\GameOfLife\Bootloadable_v1_0</v>
+<v>GameOfLife\GameOfLife\cy_pins_v1_70</v>
+<v>GameOfLife\GameOfLife\PrISM_v2_10</v>
+<v>GameOfLife\GameOfLife\ZeroTerminal</v>
+<v>GameOfLife\GameOfLife\OneTerminal</v>
+<v>GameOfLife\GameOfLife\cy_clock_v1_70</v>
+<v>GameOfLife\GameOfLife\EEPROM_v2_0</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>GameOfLife</v>
+<v>GameOfLife\GameOfLife</v>
+<v>GameOfLife\GameOfLife\PSoC 5 Architecture TRM</v>
+<v>GameOfLife\GameOfLife\CY8C53 Family Datasheet</v>
+<v>GameOfLife\GameOfLife\System Reference Guide v3_10</v>
+<v>GameOfLife\GameOfLife\Bootloadable_v1_0</v>
+<v>GameOfLife\GameOfLife\cy_pins_v1_70</v>
+<v>GameOfLife\GameOfLife\PrISM_v2_10</v>
+<v>GameOfLife\GameOfLife\ZeroTerminal</v>
+<v>GameOfLife\GameOfLife\OneTerminal</v>
+<v>GameOfLife\GameOfLife\cy_clock_v1_70</v>
+<v>GameOfLife\GameOfLife\EEPROM_v2_0</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+<dataGuid v="6c335137-fa19-46ce-bc2d-2fbeb6d5f2a2">
+<CyGuid_70084457-cd6a-4593-9ed0-7f6eeb432dc2 type_name="CyDesigner.Common.ProjMgmt.GUI.CyDependenciesCustomData" version="1">
+<dictName v=".\GameOfLife.cydsn\GameOfLife.cyprj">
+<listName />
+</dictName>
+</CyGuid_70084457-cd6a-4593-9ed0-7f6eeb432dc2>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\GameOfLife.cydsn\TopDesign\TopDesign.cysch" />
+<name v="..\..\libs\Loki.cylib\PCD8544_LCD\PCD8544_LCD.cysym" />
+<name v="..\..\libs\Loki.cylib\PCD8544_LCD\PCD8544_LCD.cysch" />
+<name v="..\..\libs\Loki.cylib\PCD8544_LCD\PSoC5\API\lcd.c" />
+<name v="..\..\libs\Loki.cylib\PCD8544_LCD\PSoC5\API\lcd.h" />
+</OpenDocs>
+<config v="" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
+  <block name="ZeroTerminal_2" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="LCD_LIGHT" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="EEPROM_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="Clock_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="OneTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="PrISM_1" BASE="0x0" SIZE="0x0" desc="PrISM" visible="true">
+    <register name="PrISM_SEED" address="0x40006403" bitWidth="8" desc="Current seed value" />
+    <register name="PrISM_POLYNOM" address="0x40006413" bitWidth="8" desc="Polynomial" />
+    <register name="PrISM_DENSITY0" address="0x40006423" bitWidth="8" desc="Pulse Density 0" />
+    <register name="PrISM_DENSITY1" address="0x40006433" bitWidth="8" desc="Pulse Density 1" />
+    <register name="PrISM_SEED_COPY" address="0x40006443" bitWidth="8" desc="Start seed value" />
+  </block>
+  <block name="LCD_MOSI" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="LCD_1" BASE="0x0" SIZE="0x0" desc="" visible="true">
+    <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="ZeroTerminal_2" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="LCD_DMA" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="LCD_1_LCD_Control" BASE="0x0" SIZE="0x0" desc="" visible="true">
+      <register name="LCD_1_LCD_Control_CONTROL_REG" address="0x40006473" bitWidth="8" desc="" />
+    </block>
+    <block name="LCD_SPI" BASE="0x0" SIZE="0x0" desc="" visible="true">
+      <block name="VirtualMux_2" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+      <block name="VirtualMux_3" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+      <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+      <block name="VirtualMux_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+      <block name="IntClock" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+      <block name="BSPIM" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    </block>
+  </block>
+  <block name="Bootloadable_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="LCD_RESET" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="LCD_D_C" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="LCD_SCLK" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+</blockRegMap>
