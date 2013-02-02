@@ -215,6 +215,8 @@ namespace LokiProgrammer
                     throw;
                 }
             }
+            if(sendLen > 0)
+                System.Threading.Thread.Sleep(5);
             return response.Data;
         }
 
