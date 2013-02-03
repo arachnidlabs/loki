@@ -6498,7 +6498,6 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <part name="SJ4" library="jumper" deviceset="SJ" device=""/>
 <part name="IC4" library="SparkFun-AnalogIC" deviceset="OPAMP-DUAL" device="U"/>
 <part name="R6" library="nickparts" deviceset="TRIMPOT" device="3MM-2" value="1k"/>
-<part name="R7" library="nickparts" deviceset="TRIMPOT" device="3MM-2" value="1k"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
@@ -6506,9 +6505,6 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="32k"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
-<part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="32k"/>
 </parts>
 <sheets>
 <sheet>
@@ -6568,20 +6564,16 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <instance part="GND15" gate="1" x="-177.8" y="-33.02"/>
 <instance part="P+3" gate="1" x="-215.9" y="170.18"/>
 <instance part="SJ4" gate="1" x="-215.9" y="162.56" rot="R90"/>
-<instance part="IC4" gate="A" x="-101.6" y="71.12" rot="MR0"/>
-<instance part="IC4" gate="B" x="-104.14" y="-40.64" rot="R180"/>
-<instance part="R6" gate="R?" x="-83.82" y="68.58" rot="R90"/>
-<instance part="R7" gate="R?" x="-83.82" y="-43.18" rot="R90"/>
-<instance part="GND6" gate="1" x="-101.6" y="60.96"/>
+<instance part="IC4" gate="A" x="-101.6" y="68.58" rot="MR0"/>
+<instance part="IC4" gate="B" x="-104.14" y="-43.18" rot="R180"/>
+<instance part="R6" gate="R?" x="-50.8" y="66.04" rot="R90"/>
+<instance part="GND6" gate="1" x="-101.6" y="58.42"/>
 <instance part="GND16" gate="1" x="-91.44" y="71.12"/>
-<instance part="+3V4" gate="G$1" x="-101.6" y="81.28"/>
-<instance part="GND17" gate="1" x="-83.82" y="60.96"/>
-<instance part="R2" gate="G$1" x="-83.82" y="78.74" rot="R90"/>
-<instance part="+3V5" gate="G$1" x="-83.82" y="86.36"/>
+<instance part="+3V4" gate="G$1" x="-101.6" y="78.74"/>
+<instance part="GND17" gate="1" x="-50.8" y="58.42"/>
+<instance part="R2" gate="G$1" x="-50.8" y="76.2" rot="R90"/>
+<instance part="+3V5" gate="G$1" x="-50.8" y="83.82"/>
 <instance part="GND12" gate="1" x="-91.44" y="-40.64"/>
-<instance part="GND18" gate="1" x="-83.82" y="-50.8"/>
-<instance part="+3V6" gate="G$1" x="-83.82" y="-25.4"/>
-<instance part="R4" gate="G$1" x="-83.82" y="-33.02" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -6607,10 +6599,6 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="+3V6" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -6699,10 +6687,6 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R7" gate="R?" pin="CCW"/>
-<pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -7039,9 +7023,9 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <label x="-160.02" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="I2" pin="1"/>
-<wire x1="43.18" y1="106.68" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
-<label x="45.72" y="106.68" size="1.778" layer="95"/>
+<pinref part="U$1" gate="I1" pin="1"/>
+<wire x1="7.62" y1="106.68" x2="12.7" y2="106.68" width="0.1524" layer="91"/>
+<label x="10.16" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -7070,9 +7054,9 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <label x="-160.02" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="I1" pin="1"/>
-<wire x1="7.62" y1="106.68" x2="12.7" y2="106.68" width="0.1524" layer="91"/>
-<label x="10.16" y="106.68" size="1.778" layer="95"/>
+<pinref part="U$1" gate="I2" pin="1"/>
+<wire x1="43.18" y1="106.68" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
+<label x="45.72" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DISC2" class="0">
@@ -7082,9 +7066,9 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <label x="-144.78" y="-35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="I1" pin="2"/>
-<wire x1="7.62" y1="104.14" x2="15.24" y2="104.14" width="0.1524" layer="91"/>
-<label x="10.16" y="104.14" size="1.778" layer="95"/>
+<pinref part="U$1" gate="I2" pin="2"/>
+<wire x1="43.18" y1="104.14" x2="53.34" y2="104.14" width="0.1524" layer="91"/>
+<label x="45.72" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DISC1" class="0">
@@ -7094,9 +7078,9 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <label x="-144.78" y="73.66" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="I2" pin="2"/>
-<wire x1="43.18" y1="104.14" x2="53.34" y2="104.14" width="0.1524" layer="91"/>
-<label x="45.72" y="104.14" size="1.778" layer="95"/>
+<pinref part="U$1" gate="I1" pin="2"/>
+<wire x1="7.62" y1="104.14" x2="15.24" y2="104.14" width="0.1524" layer="91"/>
+<label x="10.16" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -7106,7 +7090,7 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <wire x1="-91.44" y1="83.82" x2="-96.52" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="A" pin="-IN"/>
 <wire x1="-96.52" y1="83.82" x2="-104.14" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-96.52" y1="73.66" x2="-96.52" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="71.12" x2="-96.52" y2="83.82" width="0.1524" layer="91"/>
 <junction x="-96.52" y="83.82"/>
 </segment>
 </net>
@@ -7114,14 +7098,7 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <segment>
 <pinref part="IC4" gate="A" pin="OUT"/>
 <pinref part="IC2" gate="G$1" pin="FB"/>
-<wire x1="-111.76" y1="71.12" x2="-111.76" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<pinref part="IC4" gate="A" pin="+IN"/>
-<pinref part="R6" gate="R?" pin="WIPER"/>
-<wire x1="-96.52" y1="68.58" x2="-88.9" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="68.58" x2="-111.76" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$43" class="0">
@@ -7133,7 +7110,7 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <net name="N$41" class="0">
 <segment>
 <pinref part="IC4" gate="B" pin="-IN"/>
-<wire x1="-96.52" y1="-38.1" x2="-96.52" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="-40.64" x2="-96.52" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="SOURCE"/>
 <wire x1="-96.52" y1="-27.94" x2="-104.14" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -7145,20 +7122,24 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <segment>
 <pinref part="IC4" gate="B" pin="OUT"/>
 <pinref part="IC3" gate="G$1" pin="FB"/>
-<wire x1="-111.76" y1="-40.64" x2="-111.76" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="-43.18" x2="-111.76" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$44" class="0">
+<net name="CURRENTADJ" class="0">
 <segment>
 <pinref part="IC4" gate="B" pin="+IN"/>
-<pinref part="R7" gate="R?" pin="WIPER"/>
-<wire x1="-96.52" y1="-43.18" x2="-88.9" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="-45.72" x2="-88.9" y2="-45.72" width="0.1524" layer="91"/>
+<label x="-96.52" y="-45.72" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$45" class="0">
 <segment>
-<pinref part="R7" gate="R?" pin="CW"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="IC4" gate="A" pin="+IN"/>
+<wire x1="-96.52" y1="66.04" x2="-88.9" y2="66.04" width="0.1524" layer="91"/>
+<label x="-96.52" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R6" gate="R?" pin="WIPER"/>
+<wire x1="-55.88" y1="66.04" x2="-60.96" y2="66.04" width="0.1524" layer="91"/>
+<label x="-71.12" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$46" class="0">
