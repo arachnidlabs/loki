@@ -1828,110 +1828,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 </deviceset>
 </devicesets>
 </library>
-<library name="stcs2a">
-<packages>
-<package name="POWER-SO10">
-<description>&lt;b&gt;Power SO-10&lt;/b&gt;&lt;p&gt;
-http://eu.st.com/stonline/ 3732.pdf and 5691.pdf</description>
-<wire x1="-4.65" y1="3.65" x2="4.65" y2="3.65" width="0.254" layer="21"/>
-<wire x1="4.65" y1="3.65" x2="4.65" y2="-3.65" width="0.254" layer="21"/>
-<wire x1="4.65" y1="-3.65" x2="-4.65" y2="-3.65" width="0.254" layer="21"/>
-<wire x1="-4.65" y1="-3.65" x2="-4.65" y2="3.65" width="0.254" layer="21"/>
-<wire x1="-1" y1="3.6" x2="1" y2="3.6" width="0.254" layer="21" curve="180"/>
-<wire x1="-3.7" y1="3.8" x2="-3.7" y2="4.3" width="0.254" layer="51"/>
-<wire x1="-3.7" y1="4.3" x2="-3.3" y2="4.7" width="0.254" layer="51"/>
-<wire x1="-3.3" y1="4.7" x2="-1.1" y2="4.7" width="0.254" layer="51"/>
-<wire x1="1.1" y1="4.7" x2="3.3" y2="4.7" width="0.254" layer="51"/>
-<wire x1="3.3" y1="4.7" x2="3.7" y2="4.3" width="0.254" layer="51"/>
-<wire x1="3.7" y1="4.3" x2="3.7" y2="3.8" width="0.254" layer="51"/>
-<wire x1="-1.1" y1="4.7" x2="1.1" y2="4.7" width="0.254" layer="51" curve="85.020894"/>
-<wire x1="3.7" y1="-3.8" x2="3.7" y2="-4.3" width="0.254" layer="51"/>
-<wire x1="3.7" y1="-4.3" x2="3.3" y2="-4.7" width="0.254" layer="51"/>
-<wire x1="3.3" y1="-4.7" x2="2.3" y2="-4.7" width="0.254" layer="51"/>
-<wire x1="-2.3" y1="-4.7" x2="-3.3" y2="-4.7" width="0.254" layer="51"/>
-<wire x1="-3.3" y1="-4.7" x2="-3.7" y2="-4.3" width="0.254" layer="51"/>
-<wire x1="-3.7" y1="-4.3" x2="-3.7" y2="-3.8" width="0.254" layer="51"/>
-<wire x1="-2.3" y1="-4.7" x2="-2.3" y2="-4.5" width="0.254" layer="51"/>
-<wire x1="-2.3" y1="-4.5" x2="-2.1" y2="-4.3" width="0.254" layer="51"/>
-<wire x1="-2.1" y1="-4.3" x2="2.1" y2="-4.3" width="0.254" layer="51"/>
-<wire x1="2.1" y1="-4.3" x2="2.3" y2="-4.5" width="0.254" layer="51"/>
-<wire x1="2.3" y1="-4.5" x2="2.3" y2="-4.7" width="0.254" layer="51"/>
-<smd name="P" x="0" y="0" dx="6.3" dy="9.5" layer="1"/>
-<smd name="1" x="-6.625" y="2.54" dx="1.65" dy="0.73" layer="1"/>
-<smd name="2" x="-6.625" y="1.27" dx="1.65" dy="0.73" layer="1"/>
-<smd name="3" x="-6.625" y="0" dx="1.65" dy="0.73" layer="1"/>
-<smd name="4" x="-6.625" y="-1.27" dx="1.65" dy="0.73" layer="1"/>
-<smd name="5" x="-6.625" y="-2.54" dx="1.65" dy="0.73" layer="1"/>
-<smd name="6" x="6.625" y="-2.54" dx="1.65" dy="0.73" layer="1"/>
-<smd name="7" x="6.625" y="-1.27" dx="1.65" dy="0.73" layer="1"/>
-<smd name="8" x="6.625" y="0" dx="1.65" dy="0.73" layer="1"/>
-<smd name="9" x="6.625" y="1.27" dx="1.65" dy="0.73" layer="1"/>
-<smd name="10" x="6.625" y="2.54" dx="1.65" dy="0.73" layer="1"/>
-<text x="-3.81" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-7.1755" y1="2.413" x2="-4.6355" y2="2.667" layer="51"/>
-<rectangle x1="-7.1755" y1="1.143" x2="-4.6355" y2="1.397" layer="51"/>
-<rectangle x1="-7.1755" y1="-0.127" x2="-4.6355" y2="0.127" layer="51"/>
-<rectangle x1="-7.1755" y1="-1.397" x2="-4.6355" y2="-1.143" layer="51"/>
-<rectangle x1="-7.1755" y1="-2.667" x2="-4.6355" y2="-2.413" layer="51"/>
-<rectangle x1="4.6355" y1="-2.667" x2="7.1755" y2="-2.413" layer="51"/>
-<rectangle x1="4.6355" y1="-1.397" x2="7.1755" y2="-1.143" layer="51"/>
-<rectangle x1="4.6355" y1="-0.127" x2="7.1755" y2="0.127" layer="51"/>
-<rectangle x1="4.6355" y1="1.143" x2="7.1755" y2="1.397" layer="51"/>
-<rectangle x1="4.6355" y1="2.413" x2="7.1755" y2="2.667" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="STCS2A">
-<description>2 A max constant current LED driver</description>
-<wire x1="-25.4" y1="27.94" x2="-25.4" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="-22.86" x2="25.4" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-22.86" x2="25.4" y2="27.94" width="0.254" layer="94"/>
-<wire x1="25.4" y1="27.94" x2="-25.4" y2="27.94" width="0.254" layer="94"/>
-<pin name="VCC" x="-15.24" y="30.48" length="short" direction="pwr" rot="R270"/>
-<pin name="DRAIN" x="15.24" y="30.48" length="short" direction="in" rot="R270"/>
-<pin name="DISC" x="-20.32" y="-25.4" length="short" direction="out" rot="R90"/>
-<pin name="PWM" x="-27.94" y="10.16" length="short" direction="in"/>
-<pin name="EN" x="-27.94" y="-12.7" length="short" direction="in"/>
-<pin name="SOURCE" x="20.32" y="-25.4" length="short" direction="out" rot="R90"/>
-<pin name="FB" x="12.7" y="-25.4" length="short" direction="in" rot="R90"/>
-<pin name="GND" x="2.54" y="-25.4" length="short" direction="pwr" rot="R90"/>
-<pin name="SLOPE" x="-7.62" y="-25.4" length="short" direction="pas" rot="R90"/>
-<pin name="TAB" x="0" y="-25.4" length="short" direction="pwr" rot="R90"/>
-<pin name="NC" x="-27.94" y="20.32" length="short" direction="nc"/>
-<text x="-17.78" y="-25.4" size="1.27" layer="94">&gt;VALUE</text>
-<text x="-2.54" y="30.48" size="1.27" layer="94">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="STCS2A" prefix="IC" uservalue="yes">
-<description>2 A max constant current LED driver</description>
-<gates>
-<gate name="G$1" symbol="STCS2A" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="POWER-SO10">
-<connects>
-<connect gate="G$1" pin="DISC" pad="10"/>
-<connect gate="G$1" pin="DRAIN" pad="5"/>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="FB" pad="7"/>
-<connect gate="G$1" pin="GND" pad="8"/>
-<connect gate="G$1" pin="NC" pad="4"/>
-<connect gate="G$1" pin="PWM" pad="2"/>
-<connect gate="G$1" pin="SLOPE" pad="9"/>
-<connect gate="G$1" pin="SOURCE" pad="6"/>
-<connect gate="G$1" pin="TAB" pad="P"/>
-<connect gate="G$1" pin="VCC" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="resistor">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
@@ -5300,21 +5196,6 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <text x="-0.889" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
-<package name="SOT23-3">
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
-<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
-<text x="-0.8255" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
 <package name="DIODE-1N4148">
 <wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.2032" layer="21"/>
 <wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.2032" layer="21"/>
@@ -5412,22 +5293,20 @@ Basic small signal diode good up to 200mA. SMB footprint. Common part #: BAS16</
 <text x="-0.6858" y="-0.9906" size="0.4064" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.1397" y1="-0.3937" x2="-0.0127" y2="0.381" layer="21"/>
 </package>
-<package name="SMC">
-<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
-<wire x1="-3.5606" y1="3.105" x2="3.5606" y2="3.105" width="0.1016" layer="21"/>
-<wire x1="-3.5606" y1="-3.105" x2="3.5606" y2="-3.105" width="0.1016" layer="21"/>
-<wire x1="-3.5606" y1="-3.105" x2="-3.5606" y2="3.105" width="0.1016" layer="51"/>
-<wire x1="3.5606" y1="-3.105" x2="3.5606" y2="3.105" width="0.1016" layer="51"/>
-<wire x1="0.543" y1="1" x2="-0.83" y2="0" width="0.2032" layer="21"/>
-<wire x1="-0.83" y1="0" x2="0.543" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.543" y1="-1" x2="0.543" y2="1" width="0.2032" layer="21"/>
-<smd name="C" x="-3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
-<smd name="A" x="3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
-<text x="-3.459" y="3.359" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.459" y="-4.629" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-4.094" y1="-1.0922" x2="-3.5606" y2="1.0922" layer="51"/>
-<rectangle x1="3.5606" y1="-1.0922" x2="4.094" y2="1.0922" layer="51"/>
-<rectangle x1="-2.1" y1="-3.1" x2="-0.85" y2="3.1" layer="21"/>
+<package name="SOT23-3">
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
+<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<text x="-0.8255" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -5533,15 +5412,6 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </technologies>
 </device>
 <device name="SOD523" package="SOD523">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SMC/DO-214AB" package="SMC">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -6447,6 +6317,225 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="currentplank">
+<description>Generated from &lt;b&gt;currentplank.sch&lt;/b&gt;&lt;p&gt;
+by exp-project-lbr.ulp</description>
+<packages>
+<package name="STCS2A_POWER-SO10">
+<description>&lt;b&gt;Power SO-10&lt;/b&gt;&lt;p&gt;
+http://eu.st.com/stonline/ 3732.pdf and 5691.pdf</description>
+<wire x1="-4.65" y1="3.65" x2="4.65" y2="3.65" width="0.254" layer="21"/>
+<wire x1="4.65" y1="3.65" x2="4.65" y2="-3.65" width="0.254" layer="21"/>
+<wire x1="4.65" y1="-3.65" x2="-4.65" y2="-3.65" width="0.254" layer="21"/>
+<wire x1="-4.65" y1="-3.65" x2="-4.65" y2="3.65" width="0.254" layer="21"/>
+<wire x1="-1" y1="3.6" x2="1" y2="3.6" width="0.254" layer="21" curve="180"/>
+<wire x1="-3.7" y1="3.8" x2="-3.7" y2="4.3" width="0.254" layer="51"/>
+<wire x1="-3.7" y1="4.3" x2="-3.3" y2="4.7" width="0.254" layer="51"/>
+<wire x1="-3.3" y1="4.7" x2="-1.1" y2="4.7" width="0.254" layer="51"/>
+<wire x1="1.1" y1="4.7" x2="3.3" y2="4.7" width="0.254" layer="51"/>
+<wire x1="3.3" y1="4.7" x2="3.7" y2="4.3" width="0.254" layer="51"/>
+<wire x1="3.7" y1="4.3" x2="3.7" y2="3.8" width="0.254" layer="51"/>
+<wire x1="-1.1" y1="4.7" x2="1.1" y2="4.7" width="0.254" layer="51" curve="85.020894"/>
+<wire x1="3.7" y1="-3.8" x2="3.7" y2="-4.3" width="0.254" layer="51"/>
+<wire x1="3.7" y1="-4.3" x2="3.3" y2="-4.7" width="0.254" layer="51"/>
+<wire x1="3.3" y1="-4.7" x2="2.3" y2="-4.7" width="0.254" layer="51"/>
+<wire x1="-2.3" y1="-4.7" x2="-3.3" y2="-4.7" width="0.254" layer="51"/>
+<wire x1="-3.3" y1="-4.7" x2="-3.7" y2="-4.3" width="0.254" layer="51"/>
+<wire x1="-3.7" y1="-4.3" x2="-3.7" y2="-3.8" width="0.254" layer="51"/>
+<wire x1="-2.3" y1="-4.7" x2="-2.3" y2="-4.5" width="0.254" layer="51"/>
+<wire x1="-2.3" y1="-4.5" x2="-2.1" y2="-4.3" width="0.254" layer="51"/>
+<wire x1="-2.1" y1="-4.3" x2="2.1" y2="-4.3" width="0.254" layer="51"/>
+<wire x1="2.1" y1="-4.3" x2="2.3" y2="-4.5" width="0.254" layer="51"/>
+<wire x1="2.3" y1="-4.5" x2="2.3" y2="-4.7" width="0.254" layer="51"/>
+<rectangle x1="-7.1755" y1="2.413" x2="-4.6355" y2="2.667" layer="51"/>
+<rectangle x1="-7.1755" y1="1.143" x2="-4.6355" y2="1.397" layer="51"/>
+<rectangle x1="-7.1755" y1="-0.127" x2="-4.6355" y2="0.127" layer="51"/>
+<rectangle x1="-7.1755" y1="-1.397" x2="-4.6355" y2="-1.143" layer="51"/>
+<rectangle x1="-7.1755" y1="-2.667" x2="-4.6355" y2="-2.413" layer="51"/>
+<rectangle x1="4.6355" y1="-2.667" x2="7.1755" y2="-2.413" layer="51"/>
+<rectangle x1="4.6355" y1="-1.397" x2="7.1755" y2="-1.143" layer="51"/>
+<rectangle x1="4.6355" y1="-0.127" x2="7.1755" y2="0.127" layer="51"/>
+<rectangle x1="4.6355" y1="1.143" x2="7.1755" y2="1.397" layer="51"/>
+<rectangle x1="4.6355" y1="2.413" x2="7.1755" y2="2.667" layer="51"/>
+<smd name="1" x="-6.625" y="2.54" dx="1.65" dy="0.73" layer="1"/>
+<smd name="2" x="-6.625" y="1.27" dx="1.65" dy="0.73" layer="1"/>
+<smd name="3" x="-6.625" y="0" dx="1.65" dy="0.73" layer="1"/>
+<smd name="4" x="-6.625" y="-1.27" dx="1.65" dy="0.73" layer="1"/>
+<smd name="5" x="-6.625" y="-2.54" dx="1.65" dy="0.73" layer="1"/>
+<smd name="6" x="6.625" y="-2.54" dx="1.65" dy="0.73" layer="1"/>
+<smd name="7" x="6.625" y="-1.27" dx="1.65" dy="0.73" layer="1"/>
+<smd name="8" x="6.625" y="0" dx="1.65" dy="0.73" layer="1"/>
+<smd name="9" x="6.625" y="1.27" dx="1.65" dy="0.73" layer="1"/>
+<smd name="10" x="6.625" y="2.54" dx="1.65" dy="0.73" layer="1"/>
+<smd name="P" x="0" y="0" dx="6.3" dy="9.5" layer="1" stop="no" thermals="no"/>
+<text x="-3.81" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
+<polygon width="0.1524" layer="29">
+<vertex x="-2.54" y="-4.7625"/>
+<vertex x="-2.54" y="-4.445" curve="-90"/>
+<vertex x="-3.175" y="-3.81" curve="-90"/>
+<vertex x="-2.54" y="-3.175"/>
+<vertex x="-2.54" y="-2.54" curve="-90"/>
+<vertex x="-3.175" y="-1.905" curve="-90"/>
+<vertex x="-2.54" y="-1.27"/>
+<vertex x="-2.54" y="-0.635" curve="-90"/>
+<vertex x="-3.175" y="0" curve="-90"/>
+<vertex x="-2.54" y="0.635"/>
+<vertex x="-2.54" y="1.27" curve="-90"/>
+<vertex x="-3.175" y="1.905" curve="-90"/>
+<vertex x="-2.54" y="2.54"/>
+<vertex x="-2.54" y="3.175" curve="-90"/>
+<vertex x="-3.175" y="3.81" curve="-90"/>
+<vertex x="-2.54" y="4.445"/>
+<vertex x="-2.54" y="4.7625"/>
+<vertex x="-3.175" y="4.7625"/>
+<vertex x="-3.175" y="-4.7625"/>
+</polygon>
+<polygon width="0.1524" layer="29">
+<vertex x="-2.54" y="-4.7625"/>
+<vertex x="-2.54" y="-4.445" curve="90"/>
+<vertex x="-1.905" y="-3.81" curve="90"/>
+<vertex x="-2.54" y="-3.175"/>
+<vertex x="-2.54" y="-2.54" curve="90"/>
+<vertex x="-1.905" y="-1.905" curve="90"/>
+<vertex x="-2.54" y="-1.27"/>
+<vertex x="-2.54" y="-0.635" curve="90"/>
+<vertex x="-1.905" y="0" curve="90"/>
+<vertex x="-2.54" y="0.635"/>
+<vertex x="-2.54" y="1.27" curve="90"/>
+<vertex x="-1.905" y="1.905" curve="90"/>
+<vertex x="-2.54" y="2.54"/>
+<vertex x="-2.54" y="3.175" curve="90"/>
+<vertex x="-1.905" y="3.81" curve="90"/>
+<vertex x="-2.54" y="4.445"/>
+<vertex x="-2.54" y="4.7625"/>
+<vertex x="0" y="4.7625"/>
+<vertex x="0" y="4.445" curve="90"/>
+<vertex x="-0.635" y="3.81" curve="90"/>
+<vertex x="0" y="3.175"/>
+<vertex x="0" y="2.54" curve="90"/>
+<vertex x="-0.635" y="1.905" curve="90"/>
+<vertex x="0" y="1.27"/>
+<vertex x="0" y="0.635" curve="90"/>
+<vertex x="-0.635" y="0" curve="90"/>
+<vertex x="0" y="-0.635"/>
+<vertex x="0" y="-1.27" curve="90"/>
+<vertex x="-0.635" y="-1.905" curve="90"/>
+<vertex x="0" y="-2.54"/>
+<vertex x="0" y="-3.175" curve="90"/>
+<vertex x="-0.635" y="-3.81" curve="90"/>
+<vertex x="0" y="-4.445"/>
+<vertex x="0" y="-4.7625"/>
+</polygon>
+<polygon width="0.1524" layer="29">
+<vertex x="0" y="-4.7625"/>
+<vertex x="0" y="-4.445" curve="90"/>
+<vertex x="0.635" y="-3.81" curve="90"/>
+<vertex x="0" y="-3.175"/>
+<vertex x="0" y="-2.54" curve="90"/>
+<vertex x="0.635" y="-1.905" curve="90"/>
+<vertex x="0" y="-1.27"/>
+<vertex x="0" y="-0.635" curve="90"/>
+<vertex x="0.635" y="0" curve="90"/>
+<vertex x="0" y="0.635"/>
+<vertex x="0" y="1.27" curve="90"/>
+<vertex x="0.635" y="1.905" curve="90"/>
+<vertex x="0" y="2.54"/>
+<vertex x="0" y="3.175" curve="90"/>
+<vertex x="0.635" y="3.81" curve="90"/>
+<vertex x="0" y="4.445"/>
+<vertex x="0" y="4.7625"/>
+<vertex x="2.54" y="4.7625"/>
+<vertex x="2.54" y="4.445" curve="90"/>
+<vertex x="1.905" y="3.81" curve="90"/>
+<vertex x="2.54" y="3.175"/>
+<vertex x="2.54" y="2.54" curve="90"/>
+<vertex x="1.905" y="1.905" curve="90"/>
+<vertex x="2.54" y="1.27"/>
+<vertex x="2.54" y="0.635" curve="90"/>
+<vertex x="1.905" y="0" curve="90"/>
+<vertex x="2.54" y="-0.635"/>
+<vertex x="2.54" y="-1.27" curve="90"/>
+<vertex x="1.905" y="-1.905" curve="90"/>
+<vertex x="2.54" y="-2.54"/>
+<vertex x="2.54" y="-3.175" curve="90"/>
+<vertex x="1.905" y="-3.81" curve="90"/>
+<vertex x="2.54" y="-4.445"/>
+<vertex x="2.54" y="-4.7625"/>
+</polygon>
+<polygon width="0.1524" layer="29">
+<vertex x="3.175" y="4.7625"/>
+<vertex x="2.54" y="4.7625"/>
+<vertex x="2.54" y="4.445" curve="-90"/>
+<vertex x="3.175" y="3.81" curve="-90"/>
+<vertex x="2.54" y="3.175"/>
+<vertex x="2.54" y="2.54" curve="-90"/>
+<vertex x="3.175" y="1.905" curve="-90"/>
+<vertex x="2.54" y="1.27"/>
+<vertex x="2.54" y="0.635" curve="-90"/>
+<vertex x="3.175" y="0" curve="-90"/>
+<vertex x="2.54" y="-0.635"/>
+<vertex x="2.54" y="-1.27" curve="-90"/>
+<vertex x="3.175" y="-1.905" curve="-90"/>
+<vertex x="2.54" y="-2.54"/>
+<vertex x="2.54" y="-3.175" curve="-90"/>
+<vertex x="3.175" y="-3.81" curve="-90"/>
+<vertex x="2.54" y="-4.445"/>
+<vertex x="2.54" y="-4.7625"/>
+<vertex x="3.175" y="-4.7625"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="STCS2A_STCS2A">
+<wire x1="-25.4" y1="27.94" x2="-25.4" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-22.86" x2="25.4" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-22.86" x2="25.4" y2="27.94" width="0.254" layer="94"/>
+<wire x1="25.4" y1="27.94" x2="-25.4" y2="27.94" width="0.254" layer="94"/>
+<pin name="DISC" x="-20.32" y="-25.4" length="short" direction="out" rot="R90"/>
+<pin name="DRAIN" x="15.24" y="30.48" length="short" direction="in" rot="R270"/>
+<pin name="EN" x="-27.94" y="-12.7" length="short" direction="in"/>
+<pin name="FB" x="12.7" y="-25.4" length="short" direction="in" rot="R90"/>
+<pin name="GND" x="2.54" y="-25.4" length="short" direction="pwr" rot="R90"/>
+<pin name="NC" x="-27.94" y="20.32" length="short" direction="nc"/>
+<pin name="PWM" x="-27.94" y="10.16" length="short" direction="in"/>
+<pin name="SLOPE" x="-7.62" y="-25.4" length="short" direction="pas" rot="R90"/>
+<pin name="SOURCE" x="20.32" y="-25.4" length="short" direction="out" rot="R90"/>
+<pin name="TAB" x="0" y="-25.4" length="short" direction="pwr" rot="R90"/>
+<pin name="VCC" x="-15.24" y="30.48" length="short" direction="pwr" rot="R270"/>
+<text x="-17.78" y="-25.4" size="1.27" layer="94">&gt;VALUE</text>
+<text x="-2.54" y="30.48" size="1.27" layer="94">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="STCS2A_STCS2A" prefix="IC" uservalue="yes">
+<description>2 A max constant current LED driver</description>
+<gates>
+<gate name="G$1" symbol="STCS2A_STCS2A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="STCS2A_POWER-SO10">
+<connects>
+<connect gate="G$1" pin="DISC" pad="10"/>
+<connect gate="G$1" pin="DRAIN" pad="5"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="FB" pad="7"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="NC" pad="4"/>
+<connect gate="G$1" pin="PWM" pad="2"/>
+<connect gate="G$1" pin="SLOPE" pad="9"/>
+<connect gate="G$1" pin="SOURCE" pad="6"/>
+<connect gate="G$1" pin="TAB" pad="P"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6470,8 +6559,8 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="SJ1" library="jumper" deviceset="SJ" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="IC2" library="stcs2a" deviceset="STCS2A" device="" value="STCS2A"/>
-<part name="IC3" library="stcs2a" deviceset="STCS2A" device="" value="STCS2A"/>
+<part name="IC2" library="currentplank" deviceset="STCS2A_STCS2A" device="" value="STCS2A"/>
+<part name="IC3" library="currentplank" deviceset="STCS2A_STCS2A" device="" value="STCS2A"/>
 <part name="C1" library="resistor" deviceset="C-US" device="C0805" value="1uf 50v"/>
 <part name="C2" library="resistor" deviceset="C-US" device="C0805" value=".1uf 50v"/>
 <part name="C3" library="resistor" deviceset="C-US" device="C0805" value="10nf 50v"/>
