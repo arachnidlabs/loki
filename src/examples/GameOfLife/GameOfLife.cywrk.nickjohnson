@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="GameOfLife\GameOfLife\GameOfLife.cydwr">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="GameOfLife\GameOfLife">
 <ExpandedNodeIds>
 <v>GameOfLife</v>
 <v>GameOfLife\GameOfLife</v>
@@ -195,6 +195,11 @@
 <v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Debug\GameOfLife.elf</v>
 <v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Debug\GameOfLife.hex</v>
 <v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Debug\GameOfLife.map</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Release</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Release\GameOfLife.cyacd</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Release\GameOfLife.elf</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Release\GameOfLife.hex</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Release\GameOfLife.map</v>
 <v>GameOfLife\GameOfLife\GameOfLife.rpt</v>
 <v>GameOfLife\GameOfLife\GameOfLife_timing.html</v>
 <v>GameOfLife\Loki</v>
@@ -202,6 +207,8 @@
 <v>GameOfLife\Loki\CortexM3\ARM_GCC_441</v>
 <v>GameOfLife\Loki\CortexM3\ARM_GCC_441\Debug</v>
 <v>GameOfLife\Loki\CortexM3\ARM_GCC_441\Debug\Loki.a</v>
+<v>GameOfLife\Loki\CortexM3\ARM_GCC_441\Release</v>
+<v>GameOfLife\Loki\CortexM3\ARM_GCC_441\Release\Loki.a</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>GameOfLife</v>
@@ -213,6 +220,11 @@
 <v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Debug\GameOfLife.elf</v>
 <v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Debug\GameOfLife.hex</v>
 <v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Debug\GameOfLife.map</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Release</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Release\GameOfLife.cyacd</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Release\GameOfLife.elf</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Release\GameOfLife.hex</v>
+<v>GameOfLife\GameOfLife\CortexM3\ARM_GCC_441\Release\GameOfLife.map</v>
 <v>GameOfLife\GameOfLife\GameOfLife.rpt</v>
 <v>GameOfLife\GameOfLife\GameOfLife_timing.html</v>
 <v>GameOfLife\Loki</v>
@@ -220,6 +232,8 @@
 <v>GameOfLife\Loki\CortexM3\ARM_GCC_441</v>
 <v>GameOfLife\Loki\CortexM3\ARM_GCC_441\Debug</v>
 <v>GameOfLife\Loki\CortexM3\ARM_GCC_441\Debug\Loki.a</v>
+<v>GameOfLife\Loki\CortexM3\ARM_GCC_441\Release</v>
+<v>GameOfLife\Loki\CortexM3\ARM_GCC_441\Release\Loki.a</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -279,9 +293,18 @@
 <name v=".\GameOfLife.cydsn\TopDesign\TopDesign.cysch" />
 <name v="..\..\libs\Loki.cylib\PCD8544_LCD\PCD8544_LCD.cysym" />
 <name v="..\..\libs\Loki.cylib\PCD8544_LCD\PCD8544_LCD.cysch" />
-<name v="..\..\libs\Loki.cylib\PCD8544_LCD\PSoC5\API\lcd.c" />
-<name v="..\..\libs\Loki.cylib\PCD8544_LCD\PSoC5\API\lcd.h" />
+<name v="..\..\libs\Loki.cylib\PCD8544_LCD\PSoC5\API\LCD.h" />
+<name v="..\..\libs\Loki.cylib\PCD8544_LCD\PSoC5\API\LCD.c" />
+<name v=".\GameOfLife.cydsn\Generated_Source\PSoC5\LCD_1_lcd.h" />
+<name v=".\GameOfLife.cydsn\main.c" />
+<name v=".\GameOfLife.cydsn\GameOfLife.cydwr" />
+<name v=".\gameoflife.cydsn\generated_source\psoc5\LCD_1_lcd.c" />
+<name v=".\gameoflife.cydsn\generated_source\psoc5\CyDmac.c" />
+<name v=".\gameoflife.cydsn\generated_source\psoc5\LCD_1_LCD_Control.c" />
+<name v=".\gameoflife.cydsn\generated_source\psoc5\LCD_1_LCD_DMA_dma.c" />
+<name v=".\gameoflife.cydsn\generated_source\psoc5\LCD_1_LCD_SPI.c" />
+<name v="..\Snake\Snake.cydsn\TopDesign\TopDesign.cysch" />
 </OpenDocs>
-<config v="" />
+<config v="Release" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
 </CyXmlSerializer>
