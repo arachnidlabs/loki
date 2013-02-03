@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Snake</v>
+<v>Snake\Snake</v>
+<v>Snake\Snake\TopDesign.cysch</v>
+<v>Snake\Snake\Snake.cydwr</v>
+<v>Snake\Snake\Header Files</v>
+<v>Snake\Snake\Header Files\device.h</v>
+<v>Snake\Snake\Source Files</v>
+<v>Snake\Snake\Source Files\main.c</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Snake</v>
+<v>Snake\Snake</v>
+<v>Snake\Snake\TopDesign.cysch</v>
+<v>Snake\Snake\Snake.cydwr</v>
+<v>Snake\Snake\Header Files</v>
+<v>Snake\Snake\Header Files\device.h</v>
+<v>Snake\Snake\Source Files</v>
+<v>Snake\Snake\Source Files\main.c</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Workspace 'GameOfLife' (2 Projects)\Project  'Loki'\PCD8544_LCD">
+<ExpandedNodeIds>
+<v>Snake</v>
+<v>Snake\Snake</v>
+<v>Snake\Snake\TopDesign</v>
+<v>Snake\Snake\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Snake</v>
+<v>Snake\Snake</v>
+<v>Snake\Snake\TopDesign</v>
+<v>Snake\Snake\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Snake</v>
+<v>Snake\Snake</v>
+<v>Snake\Snake\Snake.rpt</v>
+<v>Snake\Snake\Snake_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Snake</v>
+<v>Snake\Snake</v>
+<v>Snake\Snake\Snake.rpt</v>
+<v>Snake\Snake\Snake_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Snake</v>
+<v>Snake\Snake</v>
+<v>Snake\Snake\PSoC 5 Architecture TRM</v>
+<v>Snake\Snake\CY8C53 Family Datasheet</v>
+<v>Snake\Snake\System Reference Guide v3_10</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Snake</v>
+<v>Snake\Snake</v>
+<v>Snake\Snake\PSoC 5 Architecture TRM</v>
+<v>Snake\Snake\CY8C53 Family Datasheet</v>
+<v>Snake\Snake\System Reference Guide v3_10</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v="..\GameOfLife\GameOfLife.cydsn\TopDesign\TopDesign.cysch" />
+<name v="..\..\libs\Loki.cylib\PCD8544_LCD\PCD8544_LCD.cysym" />
+<name v="..\..\libs\Loki.cylib\PCD8544_LCD\PCD8544_LCD.cysch" />
+<name v="..\..\libs\Loki.cylib\PCD8544_LCD\PSoC5\API\LCD.h" />
+<name v="..\..\libs\Loki.cylib\PCD8544_LCD\PSoC5\API\LCD.c" />
+<name v="..\GameOfLife\GameOfLife.cydsn\Generated_Source\PSoC5\LCD_1_lcd.h" />
+<name v="..\GameOfLife\GameOfLife.cydsn\main.c" />
+<name v="..\GameOfLife\GameOfLife.cydsn\GameOfLife.cydwr" />
+<name v="..\GameOfLife\gameoflife.cydsn\generated_source\psoc5\LCD_1_lcd.c" />
+<name v="..\GameOfLife\gameoflife.cydsn\generated_source\psoc5\CyDmac.c" />
+<name v="..\GameOfLife\gameoflife.cydsn\generated_source\psoc5\LCD_1_LCD_Control.c" />
+<name v="..\GameOfLife\gameoflife.cydsn\generated_source\psoc5\LCD_1_LCD_DMA_dma.c" />
+<name v="..\GameOfLife\gameoflife.cydsn\generated_source\psoc5\LCD_1_LCD_SPI.c" />
+<name v=".\Snake.cydsn\TopDesign\TopDesign.cysch" />
+</OpenDocs>
+<config v="" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
