@@ -6328,7 +6328,6 @@ http://eu.st.com/stonline/ 3732.pdf and 5691.pdf</description>
 <wire x1="4.65" y1="3.65" x2="4.65" y2="-3.65" width="0.254" layer="21"/>
 <wire x1="4.65" y1="-3.65" x2="-4.65" y2="-3.65" width="0.254" layer="21"/>
 <wire x1="-4.65" y1="-3.65" x2="-4.65" y2="3.65" width="0.254" layer="21"/>
-<wire x1="-1" y1="3.6" x2="1" y2="3.6" width="0.254" layer="21" curve="180"/>
 <wire x1="-3.7" y1="3.8" x2="-3.7" y2="4.3" width="0.254" layer="51"/>
 <wire x1="-3.7" y1="4.3" x2="-3.3" y2="4.7" width="0.254" layer="51"/>
 <wire x1="-3.3" y1="4.7" x2="-1.1" y2="4.7" width="0.254" layer="51"/>
@@ -6370,120 +6369,6 @@ http://eu.st.com/stonline/ 3732.pdf and 5691.pdf</description>
 <smd name="P" x="0" y="0" dx="6.3" dy="9.5" layer="1" stop="no" thermals="no"/>
 <text x="-3.81" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
-<polygon width="0.1524" layer="29">
-<vertex x="-2.54" y="-4.7625"/>
-<vertex x="-2.54" y="-4.445" curve="-90"/>
-<vertex x="-3.175" y="-3.81" curve="-90"/>
-<vertex x="-2.54" y="-3.175"/>
-<vertex x="-2.54" y="-2.54" curve="-90"/>
-<vertex x="-3.175" y="-1.905" curve="-90"/>
-<vertex x="-2.54" y="-1.27"/>
-<vertex x="-2.54" y="-0.635" curve="-90"/>
-<vertex x="-3.175" y="0" curve="-90"/>
-<vertex x="-2.54" y="0.635"/>
-<vertex x="-2.54" y="1.27" curve="-90"/>
-<vertex x="-3.175" y="1.905" curve="-90"/>
-<vertex x="-2.54" y="2.54"/>
-<vertex x="-2.54" y="3.175" curve="-90"/>
-<vertex x="-3.175" y="3.81" curve="-90"/>
-<vertex x="-2.54" y="4.445"/>
-<vertex x="-2.54" y="4.7625"/>
-<vertex x="-3.175" y="4.7625"/>
-<vertex x="-3.175" y="-4.7625"/>
-</polygon>
-<polygon width="0.1524" layer="29">
-<vertex x="-2.54" y="-4.7625"/>
-<vertex x="-2.54" y="-4.445" curve="90"/>
-<vertex x="-1.905" y="-3.81" curve="90"/>
-<vertex x="-2.54" y="-3.175"/>
-<vertex x="-2.54" y="-2.54" curve="90"/>
-<vertex x="-1.905" y="-1.905" curve="90"/>
-<vertex x="-2.54" y="-1.27"/>
-<vertex x="-2.54" y="-0.635" curve="90"/>
-<vertex x="-1.905" y="0" curve="90"/>
-<vertex x="-2.54" y="0.635"/>
-<vertex x="-2.54" y="1.27" curve="90"/>
-<vertex x="-1.905" y="1.905" curve="90"/>
-<vertex x="-2.54" y="2.54"/>
-<vertex x="-2.54" y="3.175" curve="90"/>
-<vertex x="-1.905" y="3.81" curve="90"/>
-<vertex x="-2.54" y="4.445"/>
-<vertex x="-2.54" y="4.7625"/>
-<vertex x="0" y="4.7625"/>
-<vertex x="0" y="4.445" curve="90"/>
-<vertex x="-0.635" y="3.81" curve="90"/>
-<vertex x="0" y="3.175"/>
-<vertex x="0" y="2.54" curve="90"/>
-<vertex x="-0.635" y="1.905" curve="90"/>
-<vertex x="0" y="1.27"/>
-<vertex x="0" y="0.635" curve="90"/>
-<vertex x="-0.635" y="0" curve="90"/>
-<vertex x="0" y="-0.635"/>
-<vertex x="0" y="-1.27" curve="90"/>
-<vertex x="-0.635" y="-1.905" curve="90"/>
-<vertex x="0" y="-2.54"/>
-<vertex x="0" y="-3.175" curve="90"/>
-<vertex x="-0.635" y="-3.81" curve="90"/>
-<vertex x="0" y="-4.445"/>
-<vertex x="0" y="-4.7625"/>
-</polygon>
-<polygon width="0.1524" layer="29">
-<vertex x="0" y="-4.7625"/>
-<vertex x="0" y="-4.445" curve="90"/>
-<vertex x="0.635" y="-3.81" curve="90"/>
-<vertex x="0" y="-3.175"/>
-<vertex x="0" y="-2.54" curve="90"/>
-<vertex x="0.635" y="-1.905" curve="90"/>
-<vertex x="0" y="-1.27"/>
-<vertex x="0" y="-0.635" curve="90"/>
-<vertex x="0.635" y="0" curve="90"/>
-<vertex x="0" y="0.635"/>
-<vertex x="0" y="1.27" curve="90"/>
-<vertex x="0.635" y="1.905" curve="90"/>
-<vertex x="0" y="2.54"/>
-<vertex x="0" y="3.175" curve="90"/>
-<vertex x="0.635" y="3.81" curve="90"/>
-<vertex x="0" y="4.445"/>
-<vertex x="0" y="4.7625"/>
-<vertex x="2.54" y="4.7625"/>
-<vertex x="2.54" y="4.445" curve="90"/>
-<vertex x="1.905" y="3.81" curve="90"/>
-<vertex x="2.54" y="3.175"/>
-<vertex x="2.54" y="2.54" curve="90"/>
-<vertex x="1.905" y="1.905" curve="90"/>
-<vertex x="2.54" y="1.27"/>
-<vertex x="2.54" y="0.635" curve="90"/>
-<vertex x="1.905" y="0" curve="90"/>
-<vertex x="2.54" y="-0.635"/>
-<vertex x="2.54" y="-1.27" curve="90"/>
-<vertex x="1.905" y="-1.905" curve="90"/>
-<vertex x="2.54" y="-2.54"/>
-<vertex x="2.54" y="-3.175" curve="90"/>
-<vertex x="1.905" y="-3.81" curve="90"/>
-<vertex x="2.54" y="-4.445"/>
-<vertex x="2.54" y="-4.7625"/>
-</polygon>
-<polygon width="0.1524" layer="29">
-<vertex x="3.175" y="4.7625"/>
-<vertex x="2.54" y="4.7625"/>
-<vertex x="2.54" y="4.445" curve="-90"/>
-<vertex x="3.175" y="3.81" curve="-90"/>
-<vertex x="2.54" y="3.175"/>
-<vertex x="2.54" y="2.54" curve="-90"/>
-<vertex x="3.175" y="1.905" curve="-90"/>
-<vertex x="2.54" y="1.27"/>
-<vertex x="2.54" y="0.635" curve="-90"/>
-<vertex x="3.175" y="0" curve="-90"/>
-<vertex x="2.54" y="-0.635"/>
-<vertex x="2.54" y="-1.27" curve="-90"/>
-<vertex x="3.175" y="-1.905" curve="-90"/>
-<vertex x="2.54" y="-2.54"/>
-<vertex x="2.54" y="-3.175" curve="-90"/>
-<vertex x="3.175" y="-3.81" curve="-90"/>
-<vertex x="2.54" y="-4.445"/>
-<vertex x="2.54" y="-4.7625"/>
-<vertex x="3.175" y="-4.7625"/>
-</polygon>
 </package>
 </packages>
 <symbols>
@@ -6585,7 +6470,7 @@ http://eu.st.com/stonline/ 3732.pdf and 5691.pdf</description>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="V+" device=""/>
 <part name="SJ4" library="jumper" deviceset="SJ" device=""/>
-<part name="IC4" library="SparkFun-AnalogIC" deviceset="OPAMP-DUAL" device="U"/>
+<part name="IC4" library="SparkFun-AnalogIC" deviceset="OPAMP-DUAL" device="U" value="MCP6002"/>
 <part name="R6" library="nickparts" deviceset="TRIMPOT" device="3MM-2" value="1k"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
