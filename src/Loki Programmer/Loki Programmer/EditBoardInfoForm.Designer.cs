@@ -375,7 +375,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "EditBoardInfoForm";
-            this.Text = "EditBoardInfoForm";
+            this.Text = "Edit Plank Info";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.flowLayoutPanel4.ResumeLayout(false);
