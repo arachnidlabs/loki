@@ -92,7 +92,7 @@ namespace LokiProgrammer
             if (e.PropertyName != "ProductName")
                 return;
 
-            deviceNode.Name = loki.ProductName;
+            deviceNode.Name = loki.PlankName;
         }
 
         void plank_PropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -104,7 +104,7 @@ namespace LokiProgrammer
             {
                 if (plankNode.Tag == sender)
                 {
-                    plankNode.Name = ((BoardInfo)sender).ProductName;
+                    plankNode.Name = ((BoardInfo)sender).PlankName;
                 }
             }
         }
@@ -166,7 +166,7 @@ namespace LokiProgrammer
                 programButton.Enabled = false;
                 verifyButton.Enabled = false;
                 eraseButton.Enabled = false;
-                exitBootloaderButton.Enabled = true;
+                exitBootloaderButton.Enabled = false;
             }
 
             splitContainer1.Panel2.Controls.Clear();
@@ -251,9 +251,9 @@ namespace LokiProgrammer
         private void readEEPROMWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             deviceNode = new TreeNode();
-            if (loki.ProductName != "" && loki.ProductName != null)
+            if (loki.PlankName != "" && loki.PlankName != null)
             {
-                deviceNode.Text = loki.ProductName;
+                deviceNode.Text = loki.FullName;
             }
             else
             {
@@ -276,7 +276,7 @@ namespace LokiProgrammer
                 }
                 else
                 {
-                    plankNode.Text = plank.ProductName;
+                    plankNode.Text = plank.FullName;
                 }
                 deviceNode.Nodes.Add(plankNode);
             }

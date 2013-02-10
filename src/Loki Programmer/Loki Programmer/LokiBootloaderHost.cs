@@ -264,8 +264,8 @@ namespace LokiProgrammer
                 {
                     // Board is present, but doesn't have a valid eeprom
                     BoardInfo plank = new BoardInfo(slaveAddr);
-                    plank.ProductName = "Unknown Plank";
-                    plank.ShortName = "Unknown";
+                    plank.PlankName = "Unknown Plank";
+                    plank.Version = "";
                     boards.Add(plank);
                 }
             }

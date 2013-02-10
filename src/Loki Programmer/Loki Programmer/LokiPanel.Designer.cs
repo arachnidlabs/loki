@@ -30,16 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label label1;
-            System.Windows.Forms.Label label4;
             System.Windows.Forms.Label label6;
             System.Windows.Forms.Label label2;
             System.Windows.Forms.Label label5;
-            this.serialLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.nameLabel = new System.Windows.Forms.LinkLabel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.usbDeviceLabel = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.LinkLabel();
             this.deviceVersionLabel = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pinMapBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label8 = new System.Windows.Forms.Label();
             this.bootloaderVersionLabel = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,7 +49,6 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pinMapBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -112,12 +110,22 @@
             this.dataGridViewTextBoxColumn67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn70 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn71 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn72 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn73 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn74 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn75 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn76 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn77 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn78 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn79 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.boardInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hostPinDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TargetPlank = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plankPinDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             label1 = new System.Windows.Forms.Label();
-            label4 = new System.Windows.Forms.Label();
             label6 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label5 = new System.Windows.Forms.Label();
@@ -126,17 +134,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pinMapBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.boardInfoBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // serialLabel
-            // 
-            this.serialLabel.AutoSize = true;
-            this.serialLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.boardInfoBindingSource, "Serial", true));
-            this.serialLabel.Location = new System.Drawing.Point(105, 38);
-            this.serialLabel.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
-            this.serialLabel.Name = "serialLabel";
-            this.serialLabel.Size = new System.Drawing.Size(35, 13);
-            this.serialLabel.TabIndex = 15;
-            this.serialLabel.Text = "label7";
             // 
             // label1
             // 
@@ -148,41 +145,80 @@
             label1.TabIndex = 0;
             label1.Text = "Name";
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new System.Drawing.Point(3, 134);
+            label6.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(66, 13);
+            label6.TabIndex = 5;
+            label6.Text = "Pin Mapping";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(3, 38);
+            label2.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(66, 13);
+            label2.TabIndex = 17;
+            label2.Text = "USB Device";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new System.Drawing.Point(3, 102);
+            label5.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(96, 13);
+            label5.TabIndex = 19;
+            label5.Text = "Bootloader Version";
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.usbDeviceLabel, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(label2, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.usbDeviceLabel, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.nameLabel, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(label4, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.serialLabel, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.deviceVersionLabel, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(label6, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(label5, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.bootloaderVersionLabel, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.deviceVersionLabel, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(label6, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(label5, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label8, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.bootloaderVersionLabel, 1, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 6;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(391, 352);
             this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // usbDeviceLabel
+            // 
+            this.usbDeviceLabel.AutoSize = true;
+            this.usbDeviceLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.boardInfoBindingSource, "USBDeviceName", true));
+            this.usbDeviceLabel.Location = new System.Drawing.Point(105, 38);
+            this.usbDeviceLabel.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
+            this.usbDeviceLabel.Name = "usbDeviceLabel";
+            this.usbDeviceLabel.Size = new System.Drawing.Size(35, 13);
+            this.usbDeviceLabel.TabIndex = 18;
+            this.usbDeviceLabel.Text = "label7";
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.boardInfoBindingSource, "ProductName", true));
+            this.nameLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.boardInfoBindingSource, "FullName", true));
             this.nameLabel.Location = new System.Drawing.Point(105, 6);
             this.nameLabel.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.nameLabel.Name = "nameLabel";
@@ -191,25 +227,16 @@
             this.nameLabel.TabStop = true;
             this.nameLabel.Text = "linkLabel1";
             // 
-            // label4
+            // deviceVersionLabel
             // 
-            label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(3, 38);
-            label4.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
-            label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(33, 13);
-            label4.TabIndex = 3;
-            label4.Text = "Serial";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new System.Drawing.Point(3, 166);
-            label6.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
-            label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(66, 13);
-            label6.TabIndex = 5;
-            label6.Text = "Pin Mapping";
+            this.deviceVersionLabel.AutoSize = true;
+            this.deviceVersionLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.boardInfoBindingSource, "SiliconVersion", true));
+            this.deviceVersionLabel.Location = new System.Drawing.Point(105, 70);
+            this.deviceVersionLabel.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
+            this.deviceVersionLabel.Name = "deviceVersionLabel";
+            this.deviceVersionLabel.Size = new System.Drawing.Size(35, 13);
+            this.deviceVersionLabel.TabIndex = 20;
+            this.deviceVersionLabel.Text = "label7";
             // 
             // dataGridView1
             // 
@@ -220,62 +247,26 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.hostPinDataGridViewTextBoxColumn,
             this.TargetPlank,
-            this.plankPinDataGridViewTextBoxColumn});
+            this.plankPinDataGridViewTextBoxColumn,
+            this.Type});
             this.dataGridView1.DataSource = this.pinMapBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(105, 163);
+            this.dataGridView1.Location = new System.Drawing.Point(105, 131);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(283, 186);
+            this.dataGridView1.Size = new System.Drawing.Size(283, 218);
             this.dataGridView1.TabIndex = 16;
             // 
-            // label2
+            // pinMapBindingSource
             // 
-            label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(3, 70);
-            label2.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(66, 13);
-            label2.TabIndex = 17;
-            label2.Text = "USB Device";
-            // 
-            // usbDeviceLabel
-            // 
-            this.usbDeviceLabel.AutoSize = true;
-            this.usbDeviceLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.boardInfoBindingSource, "USBDeviceName", true));
-            this.usbDeviceLabel.Location = new System.Drawing.Point(105, 70);
-            this.usbDeviceLabel.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
-            this.usbDeviceLabel.Name = "usbDeviceLabel";
-            this.usbDeviceLabel.Size = new System.Drawing.Size(35, 13);
-            this.usbDeviceLabel.TabIndex = 18;
-            this.usbDeviceLabel.Text = "label7";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new System.Drawing.Point(3, 134);
-            label5.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
-            label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(96, 13);
-            label5.TabIndex = 19;
-            label5.Text = "Bootloader Version";
-            // 
-            // deviceVersionLabel
-            // 
-            this.deviceVersionLabel.AutoSize = true;
-            this.deviceVersionLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.boardInfoBindingSource, "SiliconVersion", true));
-            this.deviceVersionLabel.Location = new System.Drawing.Point(105, 102);
-            this.deviceVersionLabel.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
-            this.deviceVersionLabel.Name = "deviceVersionLabel";
-            this.deviceVersionLabel.Size = new System.Drawing.Size(35, 13);
-            this.deviceVersionLabel.TabIndex = 20;
-            this.deviceVersionLabel.Text = "label7";
+            this.pinMapBindingSource.DataMember = "PinMap";
+            this.pinMapBindingSource.DataSource = this.boardInfoBindingSource;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 102);
+            this.label8.Location = new System.Drawing.Point(3, 70);
             this.label8.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(79, 13);
@@ -286,7 +277,7 @@
             // 
             this.bootloaderVersionLabel.AutoSize = true;
             this.bootloaderVersionLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.boardInfoBindingSource, "BootloaderVersion", true));
-            this.bootloaderVersionLabel.Location = new System.Drawing.Point(105, 134);
+            this.bootloaderVersionLabel.Location = new System.Drawing.Point(105, 102);
             this.bootloaderVersionLabel.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.bootloaderVersionLabel.Name = "bootloaderVersionLabel";
             this.bootloaderVersionLabel.Size = new System.Drawing.Size(35, 13);
@@ -355,11 +346,6 @@
             this.dataGridViewTextBoxColumn8.HeaderText = "Target Plank";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            // 
-            // pinMapBindingSource
-            // 
-            this.pinMapBindingSource.DataMember = "PinMap";
-            this.pinMapBindingSource.DataSource = this.boardInfoBindingSource;
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -849,6 +835,85 @@
             this.dataGridViewTextBoxColumn69.Name = "dataGridViewTextBoxColumn69";
             this.dataGridViewTextBoxColumn69.ReadOnly = true;
             // 
+            // dataGridViewTextBoxColumn70
+            // 
+            this.dataGridViewTextBoxColumn70.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn70.DataPropertyName = "TargetPlank";
+            this.dataGridViewTextBoxColumn70.HeaderText = "Target Plank";
+            this.dataGridViewTextBoxColumn70.Name = "dataGridViewTextBoxColumn70";
+            // 
+            // dataGridViewTextBoxColumn71
+            // 
+            this.dataGridViewTextBoxColumn71.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn71.DataPropertyName = "TargetPlank";
+            this.dataGridViewTextBoxColumn71.HeaderText = "Target Plank";
+            this.dataGridViewTextBoxColumn71.Name = "dataGridViewTextBoxColumn71";
+            this.dataGridViewTextBoxColumn71.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn72
+            // 
+            this.dataGridViewTextBoxColumn72.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn72.DataPropertyName = "TargetPlank";
+            this.dataGridViewTextBoxColumn72.HeaderText = "Target Plank";
+            this.dataGridViewTextBoxColumn72.Name = "dataGridViewTextBoxColumn72";
+            this.dataGridViewTextBoxColumn72.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn73
+            // 
+            this.dataGridViewTextBoxColumn73.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn73.DataPropertyName = "TargetPlank";
+            this.dataGridViewTextBoxColumn73.HeaderText = "Target Plank";
+            this.dataGridViewTextBoxColumn73.Name = "dataGridViewTextBoxColumn73";
+            this.dataGridViewTextBoxColumn73.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn74
+            // 
+            this.dataGridViewTextBoxColumn74.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn74.DataPropertyName = "TargetPlank";
+            this.dataGridViewTextBoxColumn74.HeaderText = "Target Plank";
+            this.dataGridViewTextBoxColumn74.Name = "dataGridViewTextBoxColumn74";
+            this.dataGridViewTextBoxColumn74.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn75
+            // 
+            this.dataGridViewTextBoxColumn75.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn75.DataPropertyName = "TargetPlank";
+            this.dataGridViewTextBoxColumn75.HeaderText = "Target Plank";
+            this.dataGridViewTextBoxColumn75.Name = "dataGridViewTextBoxColumn75";
+            this.dataGridViewTextBoxColumn75.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn76
+            // 
+            this.dataGridViewTextBoxColumn76.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn76.DataPropertyName = "TargetPlank";
+            this.dataGridViewTextBoxColumn76.HeaderText = "Target Plank";
+            this.dataGridViewTextBoxColumn76.Name = "dataGridViewTextBoxColumn76";
+            this.dataGridViewTextBoxColumn76.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn77
+            // 
+            this.dataGridViewTextBoxColumn77.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn77.DataPropertyName = "TargetPlank";
+            this.dataGridViewTextBoxColumn77.HeaderText = "Target Plank";
+            this.dataGridViewTextBoxColumn77.Name = "dataGridViewTextBoxColumn77";
+            this.dataGridViewTextBoxColumn77.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn78
+            // 
+            this.dataGridViewTextBoxColumn78.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn78.DataPropertyName = "TargetPlank";
+            this.dataGridViewTextBoxColumn78.HeaderText = "Target Plank";
+            this.dataGridViewTextBoxColumn78.Name = "dataGridViewTextBoxColumn78";
+            this.dataGridViewTextBoxColumn78.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn79
+            // 
+            this.dataGridViewTextBoxColumn79.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn79.DataPropertyName = "TargetPlank";
+            this.dataGridViewTextBoxColumn79.HeaderText = "Target Plank";
+            this.dataGridViewTextBoxColumn79.Name = "dataGridViewTextBoxColumn79";
+            this.dataGridViewTextBoxColumn79.ReadOnly = true;
+            // 
             // boardInfoBindingSource
             // 
             this.boardInfoBindingSource.DataSource = typeof(LokiProgrammer.LokiInfo);
@@ -877,6 +942,15 @@
             this.plankPinDataGridViewTextBoxColumn.Name = "plankPinDataGridViewTextBoxColumn";
             this.plankPinDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // Type
+            // 
+            this.Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Type.DataPropertyName = "Type";
+            this.Type.HeaderText = "Type";
+            this.Type.Name = "Type";
+            this.Type.ReadOnly = true;
+            this.Type.Width = 56;
+            // 
             // LokiPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -897,7 +971,6 @@
 
         private System.Windows.Forms.BindingSource pinMapBindingSource;
         private System.Windows.Forms.BindingSource boardInfoBindingSource;
-        private System.Windows.Forms.Label serialLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.LinkLabel nameLabel;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -905,9 +978,6 @@
         private System.Windows.Forms.Label deviceVersionLabel;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label bootloaderVersionLabel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hostPinDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TargetPlank;
-        private System.Windows.Forms.DataGridViewTextBoxColumn plankPinDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -977,5 +1047,19 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn67;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn68;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn69;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn70;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn71;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn72;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn73;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn74;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn75;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn76;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn77;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn78;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hostPinDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TargetPlank;
+        private System.Windows.Forms.DataGridViewTextBoxColumn plankPinDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn79;
     }
 }

@@ -133,7 +133,7 @@ namespace LokiProgrammer
                         }
                         usedPins.Add(i);
 
-                        PinMapping mapping = new PinMapping(lokiPin, plank, plank.GPIONames[i].Name);
+                        PinMapping mapping = new PinMapping(lokiPin, plank, plank.GPIONames[i].Name, plank.GPIONames[i].Type);
                         plank.PinMap.Add(mapping);
                         this.pinMap.Add(mapping);
                     }
@@ -148,7 +148,7 @@ namespace LokiProgrammer
                         {
                             bankA.RemoveAt(i);
                         }
-                        else if (i > 16 && i - 16 < bankB.Count)
+                        else if (i >= 16 && i - 16 < bankB.Count)
                         {
                             bankB.RemoveAt(i - 16);
                         }

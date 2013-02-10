@@ -18,7 +18,7 @@ namespace LokiProgrammer
         public const byte NUM_GPIOS = 32;
 
         [Flags]
-        public enum ConfigFlags : ulong {
+        public enum ConfigFlags : ushort {
             Configured      = 0x01,    // Configured if set
             IsHost          = 0x02,    // True for the Loki, false for planks
             TopPlank        = 0x04,    // Can't have other planks stacked on it
@@ -26,17 +26,27 @@ namespace LokiProgrammer
             Supplies5V      = 0x10,    // Supplies power on +5V
         }
 
+        [Flags]
+        public enum PinTypes : byte
+        {
+            Input            = 0x80,    // Input pin
+            Output           = 0x40,    // Output pin
+            Analog           = 0x20,    // Analog pin
+        }
+
         public class PinMapping
         {
             private string hostPin;
             private BoardInfo targetPlank;
             private string plankPin;
+            private PinTypes type;
 
-            public PinMapping(string hostPin, BoardInfo targetPlank, string plankPin)
+            public PinMapping(string hostPin, BoardInfo targetPlank, string plankPin, PinTypes type)
             {
                 this.hostPin = hostPin;
                 this.targetPlank = targetPlank;
                 this.plankPin = plankPin;
+                this.type = type;
             }
 
             public string HostPin
@@ -62,6 +72,38 @@ namespace LokiProgrammer
                     return this.plankPin;
                 }
             }
+
+            public PinTypes Type
+            {
+                get
+                {
+                    return this.type;
+                }
+            }
+
+            public bool IsInput
+            {
+                get
+                {
+                    return (this.type & PinTypes.Input) != 0;
+                }
+            }
+
+            public bool IsOutput
+            {
+                get
+                {
+                    return (this.type & PinTypes.Output) != 0;
+                }
+            }
+
+            public bool IsAnalog
+            {
+                get
+                {
+                    return (this.type & PinTypes.Analog) != 0;
+                }
+            }
         }
 
         public class PinInfo : INotifyPropertyChanged, IEditableObject
@@ -70,16 +112,18 @@ namespace LokiProgrammer
 
             private int pinNumber;
             private string name = "";
+            private PinTypes type;
 
             public PinInfo(int pinNumber)
             {
                 this.pinNumber = pinNumber;
             }
 
-            public PinInfo(int pinNumber, string name)
+            public PinInfo(int pinNumber, string name, PinTypes type)
                 : this(pinNumber)
             {
                 this.name = name;
+                this.type = type;
             }
 
             public int PinNumber
@@ -104,6 +148,68 @@ namespace LokiProgrammer
                 }
             }
 
+            public PinTypes Type
+            {
+                get
+                {
+                    return this.type;
+                }
+                set
+                {
+                    this.type = value;
+                    if (this.PropertyChanged != null)
+                        this.PropertyChanged(this, new PropertyChangedEventArgs("Flags"));
+                }
+            }
+
+            public bool IsInput
+            {
+                get
+                {
+                    return (this.type & PinTypes.Input) != 0;
+                }
+                set
+                {
+                    if(value) {
+                        this.Type |= PinTypes.Input;
+                    } else {
+                        this.Type &= ~PinTypes.Input;
+                    }
+                }
+            }
+
+            public bool IsOutput
+            {
+                get
+                {
+                    return (this.type & PinTypes.Output) != 0;
+                }
+                set
+                {
+                    if(value) {
+                        this.Type |= PinTypes.Output;
+                    } else {
+                        this.Type &= ~PinTypes.Output;
+                    }
+                }
+            }
+
+            public bool IsAnalog
+            {
+                get
+                {
+                    return (this.type & PinTypes.Analog) != 0;
+                }
+                set
+                {
+                    if(value) {
+                        this.Type |= PinTypes.Analog;
+                    } else {
+                        this.Type &= ~PinTypes.Analog;
+                    }
+                }
+            }
+
             public event PropertyChangedEventHandler PropertyChanged;
 
             public void BeginEdit()
@@ -115,6 +221,7 @@ namespace LokiProgrammer
             public void CancelEdit()
             {
                 this.Name = this.backup.Name;
+                this.Type = this.backup.Type;
                 this.backup = null;
             }
 
@@ -124,12 +231,10 @@ namespace LokiProgrammer
             }
         }
 
-        private int systemVersion = 1;
-        private string productName;
-        private string productURL;
-        private string shortName;
-        private Guid productId = new Guid();
-        private Guid serial = Guid.Empty;
+        private string plankName;
+        private string version;
+        private ushort makerId;
+        private ushort plankId;
         private ConfigFlags flags;
         private ObservableCollection<PinInfo> gpioNames = new ObservableCollection<PinInfo>();
         protected ObservableCollection<PinMapping> pinMap = new ObservableCollection<PinMapping>();
@@ -164,140 +269,116 @@ namespace LokiProgrammer
         public void Deserialize(Stream stream)
         {
             EndianBinaryReader reader = new EndianBinaryReader(EndianBitConverter.Little, stream);
-            if (Encoding.UTF8.GetString(reader.ReadBytes(4)) != "Loki")
-                throw new BoardInfoFormatException("Board info must begin with the 4 byte string 'Loki'");
-            
-            this.systemVersion = reader.ReadByte();
-            if(systemVersion > SUPPORTED_SYSTEM_VERSION)
-                throw new BoardInfoFormatException(String.Format("Unsupported system version {0}", systemVersion));
+            if (Encoding.UTF8.GetString(reader.ReadBytes(2)) != "LK")
+                throw new BoardInfoFormatException("Board info must begin with the 2 byte string 'LK'");
 
-            this.productName = decodePaddedString(Encoding.UTF8, reader.ReadBytes(32));
-            this.productURL = decodePaddedString(Encoding.UTF8, reader.ReadBytes(64));
-            this.shortName = decodePaddedString(Encoding.UTF8, reader.ReadBytes(16));
-            this.productId = new Guid(reader.ReadBytes(16));
-            this.serial = new Guid(reader.ReadBytes(16));
-            this.flags = (ConfigFlags)reader.ReadUInt32();
+            this.makerId = reader.ReadUInt16();
+            this.plankId = reader.ReadUInt16();
+            this.flags = (ConfigFlags)reader.ReadUInt16();
             int numGPIOs = reader.ReadByte();
             if (numGPIOs != NUM_GPIOS)
                 throw new BoardInfoFormatException(string.Format("Expected {0} GPIOs, read {1}", NUM_GPIOS, numGPIOs));
 
+            int len = reader.ReadByte();
+            this.plankName = Encoding.UTF8.GetString(reader.ReadBytes(len));
 
-            reader.Seek(1024, SeekOrigin.Begin);
+            len = reader.ReadByte();
+            this.version = Encoding.UTF8.GetString(reader.ReadBytes(len));
+
             gpioNames = new ObservableCollection<PinInfo>();
             for (int i = 0; i < NUM_GPIOS; i++)
             {
-                string pinName = decodePaddedString(Encoding.UTF8, reader.ReadBytes(32));
-                gpioNames.Add(new PinInfo(i + 1, pinName));
+                byte lengthByte = reader.ReadByte();
+                string pinName = Encoding.UTF8.GetString(reader.ReadBytes(lengthByte & 0x1F));
+                gpioNames.Add(new PinInfo(i + 1, pinName, (PinTypes)(lengthByte & 0xE0)));
             }
         }
 
         public void Serialize(Stream stream)
         {
             EndianBinaryWriter writer = new EndianBinaryWriter(EndianBitConverter.Little, stream);
-            writer.Write(Encoding.UTF8.GetBytes("Loki"));
-            writer.Write((byte)this.systemVersion);
-            writer.Write(encodePaddedString(Encoding.UTF8, this.productName ?? "", 32));
-            writer.Write(encodePaddedString(Encoding.UTF8, this.productURL ?? "", 64));
-            writer.Write(encodePaddedString(Encoding.UTF8, this.shortName ?? "", 16));
-            writer.Write(this.productId.ToByteArray());
-            writer.Write(this.serial.ToByteArray());
-            writer.Write((UInt32)this.flags);
-            writer.Write(NUM_GPIOS);
+            writer.Write(Encoding.UTF8.GetBytes("LK"));
+            writer.Write(this.makerId);
+            writer.Write(this.plankId);
+            writer.Write((UInt16)this.flags);
+            writer.Write((byte)NUM_GPIOS);
 
-            writer.Seek(1024, SeekOrigin.Begin);
-            for (int i = 0; i < NUM_GPIOS; i++)
-                writer.Write(encodePaddedString(Encoding.UTF8, gpioNames[i].Name ?? "", 32));
+            byte[] nameBytes = Encoding.UTF8.GetBytes(this.plankName);
+            writer.Write((byte)nameBytes.Length);
+            writer.Write(nameBytes);
+
+            byte[] versionBytes = Encoding.UTF8.GetBytes(this.version);
+            writer.Write((byte)versionBytes.Length);
+            writer.Write(versionBytes);
+
+            for (int i = 0; i < NUM_GPIOS; i++) {
+                byte[] gpioBytes = Encoding.UTF8.GetBytes(gpioNames[i].Name ?? "");
+                byte lengthByte = (byte)(gpioBytes.Length & 0x1F);
+                lengthByte |= (byte)gpioNames[i].Type;
+                writer.Write(lengthByte);
+                writer.Write(gpioBytes);
+            }
         }
 
-        private static string decodePaddedString(Encoding encoding, byte[] bytes)
-        {
-            int len = Array.IndexOf<byte>(bytes, 0);
-            if (len == -1)
-                len = bytes.Length;
-            return encoding.GetString(bytes, 0, len);
-        }
-
-        private static byte[] encodePaddedString(Encoding encoding, string str, int len) {
-            byte[] ret = new byte[len];
-            encoding.GetBytes(str, 0, Math.Min(len, str.Length), ret, 0);
-            return ret;
-        }
-
-        public int SystemVersion
+        public string PlankName
         {
             get
             {
-                return this.systemVersion;
+                return this.plankName;
             }
             set
             {
-                this.systemVersion = value;
+                this.plankName = value;
                 NotifyPropertyChanged();
             }
         }
 
-        public string ProductName
+        public string Version {
+            get {
+                return this.version;
+            }
+            set {
+                this.version = value;
+            }
+        }
+
+        public string FullName {
+            get {
+                return this.plankName + " " + this.version;
+            }
+        }
+
+        public UInt16 MakerId
         {
             get
             {
-                return this.productName;
+                return this.makerId;
             }
             set
             {
-                this.productName = value;
+                this.makerId = value;
                 NotifyPropertyChanged();
             }
         }
 
-        public string ProductURL
+        public UInt16 PlankId
         {
             get
             {
-                return this.productURL;
+                return this.plankId;
             }
             set
             {
-                this.productURL = value;
+                this.plankId = value;
                 NotifyPropertyChanged();
             }
         }
 
-        public string ShortName
+        public string FullPlankId
         {
             get
             {
-                return this.shortName;
-            }
-            set
-            {
-                this.shortName = value;
-                NotifyPropertyChanged();
-            }
-        }
-
-        public Guid ProductId
-        {
-            get
-            {
-                return this.productId;
-            }
-            set
-            {
-                this.productId = value;
-                NotifyPropertyChanged();
-            }
-        }
-
-        public Guid Serial
-        {
-            get
-            {
-                return this.serial;
-            }
-            set
-            {
-                this.serial = value;
-                NotifyPropertyChanged();
+                return String.Format("[{0:X}, {1:X}]", this.MakerId, this.PlankId);
             }
         }
 
@@ -461,12 +542,10 @@ namespace LokiProgrammer
         {
             this.Flags = backup.Flags;
             this.GPIONames = backup.GPIONames;
-            this.ProductId = backup.ProductId;
-            this.ProductName = backup.ProductName;
-            this.ProductURL = backup.ProductURL;
-            this.Serial = backup.Serial;
-            this.ShortName = backup.ShortName;
-            this.SystemVersion = backup.SystemVersion;
+            this.PlankName = backup.PlankName;
+            this.Version = backup.Version;
+            this.MakerId = backup.MakerId;
+            this.PlankId = backup.PlankId;
             backup = null;
         }
 
@@ -477,7 +556,7 @@ namespace LokiProgrammer
 
         public override string ToString()
         {
-            return this.ShortName;
+            return this.FullName;
         }
     }
 }

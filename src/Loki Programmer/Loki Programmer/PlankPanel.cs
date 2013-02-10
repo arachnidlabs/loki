@@ -27,7 +27,7 @@ namespace LokiProgrammer
             try
             {
                 nameLabel.LinkVisited = true;
-                System.Diagnostics.Process.Start(this.board.ProductURL);
+                System.Diagnostics.Process.Start(string.Format("http://loki.arachnidlabs.com/plank/{0:X}/{1:X}/", this.board.MakerId, this.board.PlankId));
             }
             catch (Exception ex)
             {
