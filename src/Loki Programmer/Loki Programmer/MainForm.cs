@@ -119,12 +119,12 @@ namespace LokiProgrammer
             GetHidDevice();
         }
 
-        private String ChooseFile()
+        private String ChooseFirmwareFile()
         {
  
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            if (openFirmwareDialog.ShowDialog() == DialogResult.OK)
             {
-                return openFileDialog1.FileName;
+                return openFirmwareDialog.FileName;
             }
             else
             {
@@ -133,9 +133,37 @@ namespace LokiProgrammer
             }
         }
 
+        private String ChoosePlankFile(bool write)
+        {
+            if (write)
+            {
+                if (savePlankDialog.ShowDialog() == DialogResult.OK)
+                {
+                    return savePlankDialog.FileName;
+                }
+                else
+                {
+                    MessageBox.Show("No file chosen");
+                    return null;
+                }
+            }
+            else
+            {
+                if (openPlankDialog.ShowDialog() == DialogResult.OK)
+                {
+                    return openPlankDialog.FileName;
+                }
+                else
+                {
+                    MessageBox.Show("No file chosen");
+                    return null;
+                }
+            }
+        }
+
         private void programButton_Click(object sender, EventArgs e)
         {
-            String filename = this.ChooseFile();
+            String filename = this.ChooseFirmwareFile();
 
             if (filename != null)
             {
@@ -188,7 +216,7 @@ namespace LokiProgrammer
 
         private void verifyButton_Click(object sender, EventArgs e)
         {
-            String filename = this.ChooseFile();
+            String filename = this.ChooseFirmwareFile();
 
             if (filename != null)
             {
@@ -201,7 +229,7 @@ namespace LokiProgrammer
 
         private void eraseButton_Click(object sender, EventArgs e)
         {
-            String filename = this.ChooseFile();
+            String filename = this.ChooseFirmwareFile();
 
             if (filename != null)
             {
@@ -219,7 +247,7 @@ namespace LokiProgrammer
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            openFileDialog1.InitialDirectory = System.Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            openFirmwareDialog.InitialDirectory = System.Environment.GetFolderPath(Environment.SpecialFolder.Personal);
         }
 
         private BoardInfo editNode = null;
@@ -297,6 +325,33 @@ namespace LokiProgrammer
             this.UseWaitCursor = false;
             this.Cursor = Cursors.Arrow;
             MessageBox.Show("Successfully updated EEPROM", "Write complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void loadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            String filename = this.ChoosePlankFile(false);
+
+            if (filename != null)
+            {
+                this.UseWaitCursor = true;
+                Stream f = new FileStream(filename, FileMode.Open, FileAccess.Read);
+                editNode.Deserialize(f);
+                f.Close();
+                writeEEPROMWorker.RunWorkerAsync();
+            }
+        }
+
+        private void dumpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            String filename = this.ChoosePlankFile(true);
+
+            if (filename != null)
+            {
+                Stream f = new FileStream(filename, FileMode.OpenOrCreate, FileAccess.Write);
+                editNode.Serialize(f);
+                f.Close();
+                MessageBox.Show("Successfully wrote EEPROM contents to file", "Dump complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

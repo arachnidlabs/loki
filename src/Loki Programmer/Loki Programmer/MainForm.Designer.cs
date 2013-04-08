@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.openFirmwareDialog = new System.Windows.Forms.OpenFileDialog();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.mainTreeView = new System.Windows.Forms.TreeView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -41,8 +41,12 @@
             this.exitBootloaderButton = new System.Windows.Forms.ToolStripButton();
             this.boardContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dumpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.readEEPROMWorker = new System.ComponentModel.BackgroundWorker();
             this.writeEEPROMWorker = new System.ComponentModel.BackgroundWorker();
+            this.openPlankDialog = new System.Windows.Forms.OpenFileDialog();
+            this.savePlankDialog = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -50,10 +54,10 @@
             this.boardContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // openFileDialog1
+            // openFirmwareDialog
             // 
-            this.openFileDialog1.Filter = "cyacd file|*.cyacd";
-            this.openFileDialog1.Title = "Open CYACD File";
+            this.openFirmwareDialog.Filter = "cyacd file|*.cyacd";
+            this.openFirmwareDialog.Title = "Open CYACD File";
             // 
             // splitContainer1
             // 
@@ -150,17 +154,33 @@
             // boardContextMenu
             // 
             this.boardContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editToolStripMenuItem});
+            this.editToolStripMenuItem,
+            this.loadToolStripMenuItem,
+            this.dumpToolStripMenuItem});
             this.boardContextMenu.Name = "boardContextMenu";
-            this.boardContextMenu.Size = new System.Drawing.Size(95, 26);
+            this.boardContextMenu.Size = new System.Drawing.Size(108, 70);
             this.boardContextMenu.Text = "Edit";
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.editToolStripMenuItem.Text = "&Edit";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
+            // 
+            // loadToolStripMenuItem
+            // 
+            this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.loadToolStripMenuItem.Text = "&Load";
+            this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
+            // 
+            // dumpToolStripMenuItem
+            // 
+            this.dumpToolStripMenuItem.Name = "dumpToolStripMenuItem";
+            this.dumpToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.dumpToolStripMenuItem.Text = "&Dump";
+            this.dumpToolStripMenuItem.Click += new System.EventHandler(this.dumpToolStripMenuItem_Click);
             // 
             // readEEPROMWorker
             // 
@@ -171,6 +191,16 @@
             // 
             this.writeEEPROMWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.writeEEPROMWorker_DoWork);
             this.writeEEPROMWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.writeEEPROMWorker_RunWorkerCompleted);
+            // 
+            // openPlankDialog
+            // 
+            this.openPlankDialog.Filter = "plank file|*.plank";
+            this.openPlankDialog.Title = "Open plank File";
+            // 
+            // savePlankDialog
+            // 
+            this.savePlankDialog.Filter = "plank file|*.plank";
+            this.savePlankDialog.Title = "Save plank file";
             // 
             // MainForm
             // 
@@ -195,7 +225,7 @@
 
         #endregion
 
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFirmwareDialog;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TreeView mainTreeView;
         private System.Windows.Forms.ImageList imageList1;
@@ -208,5 +238,9 @@
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.ComponentModel.BackgroundWorker readEEPROMWorker;
         private System.ComponentModel.BackgroundWorker writeEEPROMWorker;
+        private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dumpToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog openPlankDialog;
+        private System.Windows.Forms.SaveFileDialog savePlankDialog;
     }
 }
